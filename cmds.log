@@ -1,8 +1,437 @@
-    1  history
-    2  script ws3.txt
-    3  vi ws3.txt
-    4  git add cmds.log
-    5  cmds.log
-    6  git add ws3.txt
-    7  git status
-    8  history > cmds.log
+    1  cat ws3.txt
+    2  mkdir ws3
+    3  cd ws3
+    4  git init
+    5  wget https://s3.amazonaws.com/amazon-reviews-pds/tsv/amazon_reviews_us_Books_v1_02.tsv.gz
+    6  gunzip amazon_reviews_us_Books_v1_02.tsv.gz
+    7  ls
+    8  pwd
+    9  awk -F " " '{print $2}' amazon_reviews_us_Books_v1_02.tsv > cutsomers.txt
+   10  ls
+   11  sort cutsomo=ers.txt |uniq -c| sort -n
+   12  sort customers.txt | uniq -c | sort -n
+   13  sort cutsomers.txt | uniq -c | sort -n
+   14  awk -F " " '{print $4}' amazon_reviews_us_Books_v1_02.tsv > products.txt 
+   15  sort products.txt |uniq -c | sort -n
+   16  head amazon_reviews_us_Books_v1_02.tsv
+   17  history
+   18  mkdir ws3
+   19  cd ws3/
+   20  pwd
+   21  git init
+   22  wgethttps://s3.amazonaws.com/amazon-reviews-pds/tsv/amazon_reviews_us_Books_v1_02.tsv.gz
+   23  wget https://s3.amazonaws.com/amazon-reviews-pds/tsv/amazon_reviews_us_Books_v1_02.tsv.gz
+   24  awk -F " " '{print $2}' amazon_reviews_us_Books_v1_02.tsv > customers.txt
+   25  gunzip amazon_reviews_us_Books_v1_02.tsv.gz
+   26  awk -F " " '{print $2}' amazon_reviews_us_Books_v1_02.tsv > customers.txt
+   27  sort customers.txt | uniq -c | sort -n | tail -10 
+   28  awk -F " " '{print $4}' amazon_reviews_us_Books_v1_02.tsv > products.txt
+   29  sort products.txt | uniq -c | sort -n | tail -10
+   30  history > cmds.log
+   31  history
+   32  script ws3.txt
+   33  vi ws3.txt
+   34  git add cmds.log
+   35  cmds.log
+   36  git add ws3.txt
+   37  git status
+   38  history > cmds.log
+   39  git add cmds.log
+   40  git branch -M main
+   41  git commit -m "first commit"
+   42  git remote add origin git@github.com:shamikamm/Worksheet_3.git
+   43  git push -u origin main
+   44  cd ws3
+   45  ls
+   46  cat cmds.log
+   47  git add cmds.log
+   48  git add ws3.txt
+   49  git branch -M main
+   50  git commit -m "first commit"
+   51  git remote add origin git@github.com:shamikamm/Worksheet_3.git
+   52  git push -u origin main
+   53  cd ws3
+   54  ls
+   55  cat ws3.txt
+   56  cd
+   57  ls
+   58  cat cmds.log
+   59  rm -rf cmds.log
+   60  ls
+   61  head ws3.txt
+   62  git add ws3.txt
+   63  git commit -m "first commit"
+   64  git status
+   65  git commit ws3.txt
+   66  ls
+   67  git add ws3.txt
+   68  git commit -m "first commit"
+   69  git status
+   70  git add ws3.txt
+   71  git status
+   72  cat ws3.txt
+   73  clear
+   74  cd ws3
+   75  pwd
+   76  ls
+   77  cp ~/ws3.txt Ws3.txt
+   78  ls
+   79  cat Ws3.txt
+   80  ls
+   81  cat Ws3.txt
+   82  git add cmds.log
+   83  git add Ws3.txt
+   84  git status
+   85  git branch -M main
+   86  git remote add origin git@github.com:shamikamm/WS_3.git
+   87  git push -u origin main
+   88  git remote rm origin
+   89  git remote add origin git@github.com:shamikamm/WS_3.git
+   90  git push -u origin main
+   91  git config
+   92   git push -u origin main
+   93  git remote add origin git@github.com:shamikamm/WS_3.git
+   94  git remote rm origin
+   95  git init
+   96  git remote add origin git@github.com:shamikamm/WS_3.git
+   97  git push -u origin main
+   98  exit
+   99  mkdir WS3
+  100  cd WS3
+  101  pwd
+  102  ls
+  103  git init
+  104  script ws3.txt
+  105  history
+  106  script ws3.txt
+  107  vi ws3.txt
+  108  git init
+  109  cd ws3
+  110  pwd
+  111  ls
+  112  git add cmds.log
+  113  git add Ws3.txt
+  114  git branch -M main
+  115  git commit -m "first commit"
+  116  git status
+  117  git remote add origin git@github.com:shamikamm/WS_3.git
+  118  git push -u origin main
+  119  cd ws3
+  120  pwd
+  121  ls
+  122  vi ws3
+  123  git init
+  124  cat vi ws3
+  125  git add cmds.log
+  126  git add ws3
+  127  git commit -m "first commit"
+  128  git branch -M main
+  129  git remote add origin git@github.com:shamikamm/WS_3.git
+  130  git push -u origin main
+  131  git rm remote origin
+  132  git rm origin
+  133  git remote rm origin
+  134  git@github.com:shamikamm/WS_3.git
+  135  https://github.com/shamikamm/WS_3.git
+  136  cd
+  137  ls
+  138   ~/.ssh/config
+  139  ls
+  140  rm -rf amazon_reviews_us_Books_v1_02.tsv.gz.1
+  141  ls
+  142  mkdir A2
+  143  cd A2/
+  144  pwd
+  145  cp downloaded_tweets_extend_original_nolf.csv
+  146  cp downloaded_tweets_extend_original_nolf.csv A2
+  147  cp --help
+  148  ls -latr
+  149  ls
+  150  cp downloaded_tweets_extend.csv A2
+  151  wget downloaded_tweets_extend.csv
+  152  exit
+  153  cd a2/
+  154  cs A2/
+  155  cd A2
+  156  pwd
+  157  cp home/test/A1/downloaded_tweets_extend_nolf.txt ~/A2/cp /home/test/A1/downloaded_tweets__extend_original_nolf.txt ~/A2/
+  158  mkdir ~/A2/
+  159  cd A2
+  160  pwd
+  161  ls 
+  162  cp /home/test/A1/downloaded_tweets_extend_nolf.txt ~/A2/
+  163  cd
+  164  cp /home/test/A1/downloaded_tweets_extend_nolf.txt ~/A2/
+  165  cp /home/test/A1/downloaded_tweets_extend_original_nolf.txt ~/A2/
+  166  ls
+  167  cd A1
+  168  ls
+  169  head A1
+  170  cd
+  171  cd ws3
+  172  ls
+  173  cd
+  174  ls
+  175  rm -rf A2
+  176  cd
+  177  ls
+  178  cp /home/test/A1/downloaded_tweets_extend_nolf.txt ~/A2/
+  179  cp /home/test/A1/downloaded_tweets_extend_original_nolf.txt ~/A2/
+  180  mkdir ~/A2/
+  181  ls
+  182  cp /home/test/A1/downloaded_tweets_extend_nolf.txt ~/A2/
+  183  cd A2
+  184  cp /home/test/A1/downloaded_hashtags_extend.csv A2
+  185  ls
+  186  head A2
+  187  ls
+  188  rm -rf A2
+  189  ls
+  190  cd A2
+  191  cd A1
+  192  ls
+  193  head A1
+  194  cd
+  195  ls
+  196  pwd
+  197  mkdir ~/A2/
+  198  cp /home/test/A1/downloaded_tweets_extend_nolf.txt ~/A2/
+  199  cp /home/test/A1/downloaded_tweets_extend_original_nolf.txt
+  200  cp /home/test/A1/downloaded_tweets_extend_original_nolf.txt ~/A2/
+  201  exit
+  202  ls
+  203  cp /home/test/A2/download_tweets_extend_nolf.txt ~/A2/
+  204  cd A2/
+  205  pwd
+  206  ls
+  207  cp /home/test/A2/download_tweets_extend_nolf.txt ~/A2/
+  208  cd A1
+  209  cd
+  210  cd A1/
+  211  ls
+  212  cp cp /home/test/A2/download_tweets_extend_nolf.txt ~/A2/
+  213  cd
+  214  cp /home/test/A1/downloaded_hashtags_extend.csv A2
+  215  cd a2
+  216  cd A2
+  217  ls
+  218  cp /home/test/A1/downloaded_tweets_extend_nolf.txt
+  219  cp /home/test/A1/downloaded_tweets_extend_nolf.txt ~/A2/
+  220  cd
+  221  cd A1/
+  222  ls
+  223  ls -latr
+  224  cp /home/test/A1/downloaded_tweets_extend.csv downloaded_tweets_extend.csv
+  225  ls 
+  226  cp /home/test/A1/downloaded_tweets_extend_nolf.txt downloaded_tweets_extend_nolf.txt
+  227  cp /home/test/A1/downloaded_tweets_extend_original_nolf.csv downloaded_tweets_extend_original_nolf.csv
+  228  cp /home/test/A1/downloaded_tweets_extend_original.csv downloaded_tweets_extend_original.csv
+  229  ls
+  230  cd
+  231  cp /home/test/A1/downloaded_tweets_extend_nolf.txt ~/A2/
+  232  cp /home/test/A1/downloaded_tweets_extend.txt ~/A2/
+  233  cp downloaded_tweets_extend.csv downloaded_tweets_extend.csv_A2
+  234  cd
+  235  cd A1/
+  236  cp downloaded_tweets_extend.csv A2
+  237  cd 
+  238  cd A2/
+  239  ls
+  240  cd
+  241  cd A1
+  242  ls -latr
+  243  cd A1
+  244  cd A1/
+  245  ls
+  246  cp /home/test/A1/downloaded_hashtags_extend.csv downloaded_hashtags_extend.csv
+  247  ls
+  248  ls -latr
+  249  cd
+  250  cp /home/test/A1/downloaded_tweets_extend_nolf.txt ~/A2/
+  251  cp /home/test/A1/downloaded_tweets_extend_original_nolf.txt ~/A2/
+  252  cd A1
+  253  LS
+  254  ls -late
+  255  ls -latr
+  256  more downloaded_hashtags_extend.csv
+  257  ls
+  258  cd A1/
+  259  LS -LATR
+  260  ls -latr
+  261  head downloaded_tweets_extend.csv
+  262  cd
+  263  cd A2/
+  264  LS
+  265  ls -latr
+  266  ls
+  267  cs Ws1
+  268  cd Ws1
+  269  pwd
+  270  ls
+  271  cd 
+  272  cd ws_2
+  273  pwd
+  274  ls
+  275  cd
+  276  mkdir ws4
+  277  cd ws_2
+  278  mv amazon_reviews_us_Books_v1_02.tsv.gz.1 ws4
+  279  cd
+  280  cd ws4
+  281  ls
+  282  cd ws_2
+  283  ls
+  284  cp amazon_reviews_us_Books_v1_02.tsv /ws4
+  285  mv amazon_reviews_us_Books_v1_02.tsv /ws4
+  286  cp amazon_reviews_us_Books_v1_02.tsv ~
+  287  cd
+  288  pwd
+  289  ls
+  290  cd ws4
+  291  pwd
+  292  ls
+  293  cp amazon_reviews_us_Books_v1_02.tsv amazon_reviews_us_Books_v1_02.tsv
+  294  cd
+  295  pwd
+  296  ls
+  297  cp amazon_reviews_us_Books_v1_02.tsv.gz ws4
+  298  ls
+  299  cd ws4/
+  300  pwd
+  301  ls
+  302  head amazon_reviews_us_Books_v1_02.tsv.gz
+  303  rm amazon_reviews_us_Books_v1_02.tsv.gz
+  304  ls
+  305  cd
+  306  rm amazon_reviews_us_Books_v1_02.tsv.gz
+  307  ls
+  308  cp amazon_reviews_us_Books_v1_02.tsv ws4
+  309  cd ws4/
+  310  ls
+  311  head amazon_reviews_us_Books_v1_02.tsv
+  312  git init
+  313  alias l = " ls -latr "
+  314  cd
+  315  pwd
+  316  vi ~/.bashrc
+  317  cd ws4/
+  318  mkdir {CUSTOMERS, PRODUCTS}
+  319  ls
+  320  grep "12257412" amazon_reviews_us_Books_v1_02.tsv | cut -f 9 >CUSTOMERS/12257412.txt
+  321  mkdir CUTSOMERS
+  322  grep "12257412" amazon_reviews_us_Books_v1_02.tsv | cut -f 9 >CUSTOMERS/12257412.txt
+  323  mkdir CUSTOMERS/12257412.txt
+  324  ls
+  325  rm CUSTOMERS
+  326  rm CUTSOMERS
+  327  cd 
+  328  rm -rf CUSTOMERS
+  329  cd ws4
+  330  ls
+  331  rm -rf CUSTOMERS
+  332  ls
+  333  fgrep “12257412” amazon_reviews_us_Books_v1_02.tsv | cut -f 9 >> CUSTOMERS/12257412.txt
+  334  rmdir CUSTOMERS
+  335  rm - r 
+  336  re -r
+  337  rm dir
+  338  rmdir
+  339  rmdir --help
+  340  rm -rf CUSTOMERS,  PRODUCTS
+  341  ls
+  342  rm -rf {CUSTOMERS,  CUTSOMERS  PRODUCTS}
+  343  ls
+  344  mkdir CUSTOMERS
+  345  ls
+  346  grep “12257412” amazon_reviews_us_Books_v1_02.tsv | cut -f 9 >> CUSTOMERS/12257412.txt
+  347  grep "50732546" amazon_reviews_us_Books_v1_02.tsv | cut -f 9 >> CUSTOMERS/50732546.txt
+  348  grep "31048862" amazon_reviews_us_Books_v1_02.tsv | cut -f 9 >> CUSTOMERS/31048862.txt
+  349  mkdir PRODUCTS
+  350  ls
+  351  grep "0811828964" amazon_reviews_us_Books_v1_02.tsv | cut -f 9 >> PRODUCTS/0811828964.txt
+  352  grep "0373836635" amazon_reviews_us_Books_v1_02.tsv | cut -f 9 >> PRODUCTS/0373836635.txt
+  353  grep "0262181533" amazon_reviews_us_Books_v1_02.tsv | cut -f 9 >> PRODUCTS/0262181533.txt
+  354  vi CUSTOMERS
+  355  head CUSTOMERS
+  356  less CUSTOMERS
+  357  exit
+  358  cd ws4
+  359  pwd
+  360  ls
+  361  cd PRODUCTS/
+  362  pwd
+  363  ls
+  364  head 0262181533.txt
+  365  cat 0262181533.txt
+  366  cat 0373836635.txt
+  367  0811828964.txt
+  368  cat 0811828964.txt
+  369  bc
+  370  cd ws4
+  371  ls
+  372  pwd
+  373  cd CUSTOMERS
+  374  pwd
+  375  ls
+  376  more 12257412.txt
+  377  cat 12257412.txt
+  378  31048862.txt
+  379  cat 31048862.txt
+  380  man bc
+  381  bc -h
+  382  bc
+  383  vi 31048862.txt
+  384  cat 12257412.txt
+  385  cat 50732546.txt
+  386  clear
+  387  head 50732546.txt
+  388  history
+  389  mkdir ws4
+  390  script ws4.txt
+  391  pwd
+  392  ls
+  393  cp amazon_reviews_us_Books_v1_02.tsv ws4
+  394  cd ws4/
+  395  pwd
+  396  ls
+  397  head amazon_reviews_us_Books_v1_02.tsv
+  398  grep "50732546" grep “cid” amazon_reviews_us_Books_v1_02.tsv | cut -f 9 >> CUSTOMERS/cid.txt
+  399  cd
+  400  rm -rf ws4
+  401  ls
+  402  git init
+  403  mkdir ws4
+  404  cp amazon_reviews_us_Books_v1_02.tsv ws4
+  405  ls
+  406  cd ws4/
+  407  ls
+  408  grep "50732546" amazon_reviews_us_Books_v1_02.tsv | cut -f 9 >> CUSTOMERS/50732546.txt
+  409  mkdir CUSTOMERS
+  410  ls
+  411  mkdir PRODUCTS
+  412  ls
+  413  grep "50732546" amazon_reviews_us_Books_v1_02.tsv | cut -f 9 >> CUSTOMERS/50732546.txt
+  414  grep "31048862" amazon_reviews_us_Books_v1_02.tsv | cut -f 9 >> CUSTOMERS/31048862.txt
+  415  grep "51964897" amazon_reviews_us_Books_v1_02.tsv | cut -f 9 >> CUSTOMERS/51964897.txt
+  416  grep "0373836635"amazon_reviews_us_Books_v1_02.tsv | cut -f 9 >> PRODUCTS/0373836635.txt
+  417  cd ws4/
+  418  ls
+  419  head amazon_reviews_us_Books_v1_02.tsv
+  420  grep "0811828964" amazon_reviews_us_Books_v1_02.tsv | cut -f 9 >> PRODUCTS/0811828964.txt
+  421  grep "0373836635" amazon_reviews_us_Books_v1_02.tsv | cut -f 9 >> PRODUCTS/0373836635.txt
+  422  grep "0262181533" amazon_reviews_us_Books_v1_02.tsv | cut -f 9 >> PRODUCTS/0262181533.txt
+  423  cd CUSTOMERS
+  424  ls
+  425  awk 'BEGIN{s=0;}{s+=$1;}END{print s/NR;}' 31048862.txt
+  426  awk 'BEGIN{s=0;}{s+=$1;}END{print s/NR;}' 50732546.txt
+  427  awk 'BEGIN{s=0;}{s+=$1;}END{print s/NR;}' 51964897.txt
+  428  cd 
+  429  cd ws4
+  430  cd PRODUCTS
+  431  ls
+  432  awk 'BEGIN{s=0;}{s+=$1;}END{print s/NR;}' 0262181533.txt
+  433  awk 'BEGIN{s=0;}{s+=$1;}END{print s/NR;}' 0373836635.txt
+  434  awk 'BEGIN{s=0;}{s+=$1;}END{print s/NR;}' 0811828964.txt
+  435  cd
+  436  cd ws4/
+  437  history>cmds.log
