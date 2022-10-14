@@ -435,3 +435,366 @@
   435  cd
   436  cd ws4/
   437  history>cmds.log
+  438  cs
+  439  cd
+  440  cs ws4
+  441  cd ws4
+  442  ls
+  443  vi README
+  444  script ws4_1.txt
+  445  cat ws4*.txt >> ws4.combined.txt
+  446  git status
+  447  git add README
+  448  cd ws4
+  449  cp README ~
+  450  cd
+  451  ls
+  452  gitadd README
+  453  git add README
+  454  git add ws4.txt
+  455  git add ws4_1.txt
+  456  cd ws4
+  457  ls
+  458  cp cmds.log ~
+  459  cd
+  460  git add cmds.log
+  461  git status
+  462  git branch -M main
+  463  git commit -m "first commit"
+  464  git remote add origin https://github.com/shamikamm/ws4.git
+  465  git push -u origin main
+  466  cd A1/
+  467  pwd
+  468  ls
+  469  cd
+  470  pwd
+  471  ls
+  472  rm ws4.combined.txt
+  473  ls
+  474  cd A1/
+  475  ls
+  476  cp downloaded_tweets_extend_original_nolf.tsv downloaded_tweets_extend_original_nolf.tsv
+  477  cp downloaded_tweets_extend_nolf2.tsv downloaded_tweets_extend_nolf2.tsv 
+  478  cd
+  479  wget downloaded_tweets_extend_nolf2.tsv 
+  480  cp /home/test/A1/downloaded_tweets_extend_original_nolf2.tsv ~
+  481  cp /home/test/A1/downloaded_tweets_extend_nolf2.tsv ~
+  482  ls
+  483  cp downloaded_tweets_extend_original_nolf2.tsv A2
+  484  cp downloaded_tweets_extend_nolf2.tsv A2
+  485  cd A2/
+  486  ls
+  487  rm downloaded_hashtags_extend.csv
+  488  ls
+  489  cd A2/
+  490  ls
+  491  head downloaded_tweets_extend_nolf2.tsv
+  492  head  downloaded_tweets_extend_original_nolf2.tsv
+  493  awk -F"\t" '($2 == $6) {print $0}' downloaded_tweets_extend_original_nolf2.tsv | wc
+  494  awk -F"\t" '($2 != $6) {print $0}' downloaded_tweets_extend_original_nolf2.tsv | wc
+  495  awk -F"\t" '($2 != $6) {print $0}' downloaded_tweets_extend_original_nolf2.tsv > downloaded_tweets_extend_original_nolf2_NOBOT.tsv
+  496  awk -F"\t" '($2 != $6) {print $0}' downloaded_tweets_extend_nolf2.tsv > downloaded_tweets_extend_nolf2_NOBOT.tsv
+  497  ls
+  498  head downloaded_tweets_extend_original_nolf2_NOBOT.tsv
+  499  head downloaded_tweets_extend_nolf2_NOBOT.tsv
+  500  grep retweeted downloaded_tweets_extend_nolf2_NOBOT.tsv
+  501  cd A2
+  502  pwd
+  503  ls
+  504  head -n 2 downloaded_tweets_extend_original_nolf2_NOBOT.tsv
+  505  awk -F"\t" '{print $6}' downloaded_tweets_extend_original_nolf_NOBOT.tsv | head -n 10
+  506  awk -F"\t" '{print $6}' downloaded_tweets_extend_original_nolf2_NOBOT.tsv | head -n 10
+  507  awk -F"\t" '{print $6}' downloaded_tweets_extend_original_nolf2_NOBOT.tsv | tail -n 10
+  508  head -n 5 downloaded_tweets_extend_original_nolf2_NOBOT.tsv
+  509  cut -f 6 -d "\t" downloaded_tweets_extend_original_nolf2_NOBOT.tsv >> in_reply_to_user_id.txt
+  510  cut -f 6 -d " " downloaded_tweets_extend_original_nolf2_NOBOT.tsv >> in_reply_to_user_id.txt
+  511  head -n 10 in_reply_to_user_id.txt
+  512  ls
+  513  rm in_reply_to_user_id.txt
+  514  rm downloaded_tweets_extend_nolf2.tsv
+  515  rm  downloaded_tweets_extend_original_nolf2.tsv
+  516  ls
+  517  awk -F"\t" '{print $6}' downloaded_tweets_extend_original_nolf2_NOBOT.tsv >> in_reply_to_user_id.txt
+  518  ls
+  519  head in_reply_to_user_id.txt
+  520  cat in_reply_to_user_id.txt
+  521  sort in_reply_to_user_id.txt | unique -c } sort -n | tail
+  522  sort in_reply_to_user_id.txt | unique -c | sort -n | tail
+  523  grep retweeted in_reply_to_user_id.txt
+  524  grep retweeted in_reply_to_user_id.txt | head -n 10
+  525  cd
+  526  pwd
+  527  ls
+  528  cd A2/
+  529  pwd
+  530  ls
+  531  cut -f 2,6exit
+  532  exit
+  533  cd A2/
+  534  pwd
+  535  ls
+  536  head -n 5 downloaded_tweets_extend_original_nolf2_NOBOT.tsv
+  537  awk -F "\t" '{print$2}' downloaded_tweets_extend_original_nolf2_NOBOT.tsv >> authors.txt
+  538  ls
+  539  head -n 5 authors.txt
+  540  sort authors.txt | unique -c | sort -n | tail -10
+  541  sort authors.txt | uniq -c | sort -n | tail -10
+  542  awk -F "\t" '{print$2}' downloaded_tweets_extend_original_nolf2_NOBOT.tsv | head -n 1-
+  543  awk -F "\t" '{print$2}' downloaded_tweets_extend_original_nolf2_NOBOT.tsv | head -n 10
+  544  ls
+  545  rm in_reply_to_user_id.txt
+  546  ls
+  547  awk -F "\t" '{print$6}' downloaded_tweets_extend_original_nolf2_NOBOT.tsv >> reply_user_id.txt
+  548  ls
+  549  sort reply_user_id.txt | uniq -c | sort -n | tail -10
+  550  head -n downloaded_tweets_extend_nolf2_NOBOT.tsv
+  551  head -5 downloaded_tweets_extend_nolf2_NOBOT.tsv
+  552  ghghjls
+  553  ls
+  554  awk -F "\t" '{print$6}' downloaded_tweets_extend_nolf2_NOBOT.tsv >> reply.txt
+  555  ls
+  556  grep "retweeted" reply.txt | sort -n | tail -10
+  557  grep "type=retweeted" reply.txt
+  558  head reply.txt
+  559  rm reply.txt
+  560  ls
+  561  exit
+  562  ls
+  563  rm cmds.log
+  564  ls
+  565  cd A2
+  566  pwd
+  567  ls
+  568  ls -latr
+  569  cut -d "\t" -f 2 downloaded_tweets_extend_original_nolf2_NOBOT.tsv > a.txt
+  570  cut --help
+  571  q
+  572  ut -d "\" -f 2 downloaded_tweets_extend_original_nolf2_NOBOT.tsv > a.txt
+  573  q
+  574  exit
+  575  wq
+  576  cut -d "\" -f 2 downloaded_tweets_extend_original_nolf2_NOBOT.tsv > a.txt
+  577  cut -d "\" -f 2 downloaded_tweets_extend_original_nolf2_NOBOT.tsv >> a.txt
+  578  ls
+  579  cd A2/
+  580  pwd
+  581  ls
+  582  rm a.txt
+  583  rm authors.txt
+  584  rm reply_user_id.txt
+  585  ls
+  586  cut -d "\" -f 2 downloaded_tweets_extend_original_nolf2_NOBOT.tsv >> a.txt
+  587  ls
+  588  cd
+  589  ls
+  590   rm README
+  591  ls
+  592  cd A2
+  593  pwd
+  594  ls -latr
+  595  cut -f 2 -d " " downloaded_tweets_extend_original_nolf2_NOBOT.tsv >> a.txt
+  596  ls
+  597  sort a.txt |uniq - c| sort -n | tail -10
+  598  head -n 5 a.txt
+  599  sort -n a.txt | uniq -c | head
+  600  head downloaded_tweets_extend_original_nolf2_NOBOT.tsv
+  601  cut -f 2 -d "\" downloaded_tweets_extend_original_nolf2_NOBOT.tsv >> b.txt
+  602  cut -f 2 -d "/" downloaded_tweets_extend_original_nolf2_NOBOT.tsv >> c.txt
+  603  head c.txt
+  604  ls
+  605  rm c
+  606  rm c.txt
+  607  rm a.txt
+  608  ls
+  609  awk -F "\" '{print $2}' downloaded_tweets_extend_original_nolf2_NOBOT.tsv >> a.txt
+  610  awk -F "\t" '{print $2}' downloaded_tweets_extend_original_nolf2_NOBOT.tsv >> a.txt
+  611  ls
+  612  head a.txt
+  613  sort a.txt | uniq - c | sort -n | tail -10
+  614  sort a.txt | uniq - c | sort -n |
+  615  sort -n a.txt |uniq -c
+  616  sort -n a.txt |uniq -c |tail -10
+  617  sort -n a.txt |uniq -c |tail
+  618  sort a.txt |uniq -c |sort -n |tail -n
+  619  sort a.txt |uniq -c |sort -n |tail -15
+  620  sort a.txt |uniq -c |sort -n |tail -10
+  621  ls
+  622  awk -F "\t" '{print $6}' downloaded_tweets_extend_original_nolf2_NOBOT.tsv >> u.txt
+  623  sort u.txt |uniq -c |sort -n | tail -10
+  624  head downloaded_tweets_extend_nolf2_NOBOT.tsv
+  625  awk -F "\t" '{print $5}' downloaded_tweets_extend_nolf2_NOBOT.tsv >> b.txt
+  626  grep "retweeted" b.txt >> d.txt
+  627  sort d.txt | uniq -c | sort -n | tail -10
+  628  ls
+  629  head downloaded_tweets_extend_nolf2_NOBOT.tsv
+  630  awk -F "\t" '{print $4}' downloaded_tweets_extend_nolf2_NOBOT.tsv >> f.txt
+  631  sed '/^$/d' f.txt
+  632  sort f.txt | uniq -c | sort -n | tail -30
+  633  tr '[:upper:]' '[:lower:]' f.txt
+  634  ls
+  635  head downloaded_tweets_extend_nolf2_NOBOT.tsv
+  636  ls
+  637  head d.txt
+  638  head b.txt
+  639  head u.txt
+  640  cat u.txt
+  641  less
+  642  less u.txt
+  643  ls
+  644  head f.txt
+  645  awk -F "\t" '{4,5}' downloaded_tweets_extend_nolf2_NOBOT.tsv >> s.txt
+  646  awk -F "\t" '{print $4,5}' downloaded_tweets_extend_nolf2_NOBOT.tsv >> s.txt
+  647  head s.txt
+  648  sort s.txt |uniq -c |sort -n |tail -30
+  649  rm s.txt
+  650  ls
+  651  awk -F "\t" '{print $4, $5}' downloaded_tweets_extend_nolf2_NOBOT.tsv >> s.txt
+  652  ls
+  653  sort s.txt |uniq -c |sort -n |tail -30
+  654  head f.txt
+  655  mv d.txt f.txt
+  656  head f.txt
+  657  cat f.txt
+  658  exit
+  659  mkdir a2
+  660  cp downloaded_tweets_extend_nolf2.tsv a2
+  661  cp downloaded_tweets_extend_original_nolf2.tsv
+  662  cp downloaded_tweets_extend_original_nolf2.tsv a2
+  663  cd a2/
+  664  pwd
+  665  ls
+  666  awk -F "\t" '{print $2}' downloaded_tweets_extend_original_nolf2.tsv >> authors.txt
+  667  sort authors.txt |uniq -c |sort -n | tail -10
+  668  awk -F "\t" '{print $6}'  downloaded_tweets_extend_original_nolf2.tsv >> replied.txt
+  669  sort replied.txt |uniq -c |sort -n |tail -10
+  670  awk -F "\t" '{print $5}' downloaded_tweets_extend_nolf2.tsv >> reference.txt
+  671  head -n 5 reference.txt
+  672  grep "retweeted" reference.txt >> retweeted.txt
+  673  sort retweeted,txt |uniq -c |sort -n |tail -10
+  674  head retweeted.txt
+  675  sort retweeted.txt |uniq -c |sort -n |tail -10
+  676  cut -f 4 downloaded_tweets_extend_nolf2.tsv >> hashtags.txt
+  677  sort hashtags.txt |uniq -c |sort -n | tail -30
+  678  ls
+  679  cut -f 4,5 downloaded_tweets_extend_nolf2.tsv >> r.txt
+  680  grep "retweeted" r.txt |uniq -c |sort -n |tail -30
+  681  grep "replied to" r.txt |uniq -c |sort -n |tail 30
+  682  grep "replied to" r.txt |uniq -c |sort -n |tail -30
+  683  grep "replied_to" r.txt |uniq -c |sort -n |tail -30
+  684  grep "replied_to" r.txt |uniq -c |sort -n |head -30
+  685  sed '/^$/d' hashtags.txt
+  686  grep "\"" hashtags.txt |uniq -c |sort -n |tail -30
+  687  history
+  688  script A2.txt
+  689  vi A2.txt
+  690  git add A2.txt
+  691  git status
+  692  git branch -M main
+  693  git commit -m "first commit"
+  694  git remote add origin https://github.com/shamikamm/A2.git
+  695  git remote rm origin
+  696  git remote add origin https://github.com/shamikamm/A2.git
+  697  git push -u origin main
+  698  exit
+  699  ls
+  700  rm ws4_1.txt
+  701  ls
+  702  rm ws4.txt
+  703  ls
+  704  rm ws3.txt
+  705  rm a1.txt
+  706  ls
+  707  exit
+  708  which tmux
+  709  mkdir ws5
+  710  pwd
+  711  cd ws5
+  712  pwd
+  713  ls
+  714  cd
+  715  ls
+  716  cp amazon_reviews_us_Books_v1_02.tsv ws5
+  717  cd ws5
+  718  ls
+  719  pwd
+  720  ls
+  721  cd ws5/
+  722  ls
+  723  head amazon_reviews_us_Books_v1_02.tsv
+  724  cut -f 2 -d ' ' amazon_reviews_us_Books_v1_02.tsv | sort -n | uniq -c >> customers.txt
+  725  ls
+  726  head n5 customers.txt
+  727  more customers.txt |head
+  728  tail -1000 customers.txt >> c.txt
+  729  ls
+  730  head c.txt
+  731  cd
+  732  cd ws3
+  733  ls
+  734  head customers.txt
+  735  cd
+  736  cd ws5
+  737  pwd
+  738  ls
+  739  rm c.txt
+  740  rm customers.txt
+  741  ls
+  742  awk -F " " '{print $2}' amazon_reviews_us_Books_v1_02.tsv |sort -n |uniq -c >> customers.txt
+  743  ls
+  744  head customrs.txt
+  745  head customers.txt
+  746  rm customers.txt
+  747  awk -F " " '{print $2}' amazon_reviews_us_Books_v1_02.tsv |sort -n |uniq -c |tail -1000 >>customers.txt
+  748  ls
+  749  wc -l customers.txt
+  750  head customers.txt
+  751  for i in customers.txt
+  752  awk -F " " '{print $2}' amazon_reviews_us_Books_v1_02.tsv >> c.txt
+  753  sort c.txt |sort -n |uniq -c |tail -1000 >> ci.txt
+  754  ls
+  755  head ci.txt
+  756  rm ci.txt
+  757  rm c.txt
+  758  ls
+  759  for i in customers.txt; do 
+  760  awk " " '{print $2}' customers.txt |head
+  761  cut -f 2 customers.txt |head -10
+  762  cut -f 1 customers.tx |head -10
+  763  cut -f 1 customers.txt |head -10
+  764  cut -f 2 -d " " customers.txt |head
+  765  cut -f 3 customers.txt |head
+  766  cut -f 3 customers.txt |tail
+  767  for i in customers.txt ; do mv $i 
+  768  for i in customers.txt; do mv $i $(CUSTOMERS/$i).txt; done
+  769  for i in customers.txt; do mv $i $(basename $1 .txt)/($i).txt
+  770  for i in customers.txt; do echo $i >> CUSTOMERS/$i .txt; done
+  771  for c in customers.txt; do mv $i "${CUSTOMERS/$i/.txt}"; done
+  772  pwd
+  773  lss
+  774  ls
+  775  cs ws5/
+  776  cd ws5/
+  777  pwd
+  778  ls
+  779  awk -F " " '{print $2}' amazon_reviews_us_Books_v1_02.tsv |sort -n |uniq -c >>customers.txt
+  780  ls
+  781  tail customers.txt
+  782  for c in customers.txt; do NEWNAME="${i/%.CUSTOMERS/.txt}"; mv -- "$i" "$NEWNAME"; done
+  783  for c in customers,txt; do mv $c "${CUSTOMERS/$c.txt}"; done
+  784  for c in customers.txt; do $c > "CUSTOMERS/$c.txt"; done
+  785  for c in customers.txt; do $c > "CUSTOMERS${c}.txt"; done
+  786  for c in customers.txt; do echo $c > $c.txt; done
+  787  ls
+  788  head customers.txt.txt
+  789  cat CUSTOMERScustomers.txt.txt
+  790  more CUSTOMERScustomers.txt.txt
+  791  rm CUSTOMERScustomers.txt.txt
+  792  ls
+  793  more customers.txt.txt
+  794  rm customers.txt.txt
+  795  ls
+  796  for c in customers.txt; do echo $c >> "c.txt"; done
+  797  ls
+  798  more c.txt
+  799  Ctrl+B followed by C
+  800  history > cmds.log
