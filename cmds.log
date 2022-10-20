@@ -1,800 +1,1000 @@
-    1  cat ws3.txt
-    2  mkdir ws3
-    3  cd ws3
-    4  git init
-    5  wget https://s3.amazonaws.com/amazon-reviews-pds/tsv/amazon_reviews_us_Books_v1_02.tsv.gz
-    6  gunzip amazon_reviews_us_Books_v1_02.tsv.gz
-    7  ls
-    8  pwd
-    9  awk -F " " '{print $2}' amazon_reviews_us_Books_v1_02.tsv > cutsomers.txt
-   10  ls
-   11  sort cutsomo=ers.txt |uniq -c| sort -n
-   12  sort customers.txt | uniq -c | sort -n
-   13  sort cutsomers.txt | uniq -c | sort -n
-   14  awk -F " " '{print $4}' amazon_reviews_us_Books_v1_02.tsv > products.txt 
-   15  sort products.txt |uniq -c | sort -n
-   16  head amazon_reviews_us_Books_v1_02.tsv
-   17  history
-   18  mkdir ws3
-   19  cd ws3/
-   20  pwd
-   21  git init
-   22  wgethttps://s3.amazonaws.com/amazon-reviews-pds/tsv/amazon_reviews_us_Books_v1_02.tsv.gz
-   23  wget https://s3.amazonaws.com/amazon-reviews-pds/tsv/amazon_reviews_us_Books_v1_02.tsv.gz
-   24  awk -F " " '{print $2}' amazon_reviews_us_Books_v1_02.tsv > customers.txt
-   25  gunzip amazon_reviews_us_Books_v1_02.tsv.gz
-   26  awk -F " " '{print $2}' amazon_reviews_us_Books_v1_02.tsv > customers.txt
-   27  sort customers.txt | uniq -c | sort -n | tail -10 
-   28  awk -F " " '{print $4}' amazon_reviews_us_Books_v1_02.tsv > products.txt
-   29  sort products.txt | uniq -c | sort -n | tail -10
-   30  history > cmds.log
-   31  history
-   32  script ws3.txt
-   33  vi ws3.txt
-   34  git add cmds.log
-   35  cmds.log
-   36  git add ws3.txt
-   37  git status
-   38  history > cmds.log
-   39  git add cmds.log
-   40  git branch -M main
-   41  git commit -m "first commit"
-   42  git remote add origin git@github.com:shamikamm/Worksheet_3.git
-   43  git push -u origin main
-   44  cd ws3
-   45  ls
-   46  cat cmds.log
-   47  git add cmds.log
-   48  git add ws3.txt
-   49  git branch -M main
-   50  git commit -m "first commit"
-   51  git remote add origin git@github.com:shamikamm/Worksheet_3.git
-   52  git push -u origin main
-   53  cd ws3
-   54  ls
-   55  cat ws3.txt
-   56  cd
-   57  ls
-   58  cat cmds.log
-   59  rm -rf cmds.log
-   60  ls
-   61  head ws3.txt
-   62  git add ws3.txt
-   63  git commit -m "first commit"
-   64  git status
-   65  git commit ws3.txt
-   66  ls
-   67  git add ws3.txt
-   68  git commit -m "first commit"
-   69  git status
-   70  git add ws3.txt
-   71  git status
-   72  cat ws3.txt
-   73  clear
-   74  cd ws3
-   75  pwd
-   76  ls
-   77  cp ~/ws3.txt Ws3.txt
+   19  mkdir ~/A2/
+   20  cd A2
+   21  pwd
+   22  ls 
+   23  cp /home/test/A1/downloaded_tweets_extend_nolf.txt ~/A2/
+   24  cd
+   25  cp /home/test/A1/downloaded_tweets_extend_nolf.txt ~/A2/
+   26  cp /home/test/A1/downloaded_tweets_extend_original_nolf.txt ~/A2/
+   27  ls
+   28  cd A1
+   29  ls
+   30  head A1
+   31  cd
+   32  cd ws3
+   33  ls
+   34  cd
+   35  ls
+   36  rm -rf A2
+   37  cd
+   38  ls
+   39  cp /home/test/A1/downloaded_tweets_extend_nolf.txt ~/A2/
+   40  cp /home/test/A1/downloaded_tweets_extend_original_nolf.txt ~/A2/
+   41  mkdir ~/A2/
+   42  ls
+   43  cp /home/test/A1/downloaded_tweets_extend_nolf.txt ~/A2/
+   44  cd A2
+   45  cp /home/test/A1/downloaded_hashtags_extend.csv A2
+   46  ls
+   47  head A2
+   48  ls
+   49  rm -rf A2
+   50  ls
+   51  cd A2
+   52  cd A1
+   53  ls
+   54  head A1
+   55  cd
+   56  ls
+   57  pwd
+   58  mkdir ~/A2/
+   59  cp /home/test/A1/downloaded_tweets_extend_nolf.txt ~/A2/
+   60  cp /home/test/A1/downloaded_tweets_extend_original_nolf.txt
+   61  cp /home/test/A1/downloaded_tweets_extend_original_nolf.txt ~/A2/
+   62  exit
+   63  ls
+   64  cp /home/test/A2/download_tweets_extend_nolf.txt ~/A2/
+   65  cd A2/
+   66  pwd
+   67  ls
+   68  cp /home/test/A2/download_tweets_extend_nolf.txt ~/A2/
+   69  cd A1
+   70  cd
+   71  cd A1/
+   72  ls
+   73  cp cp /home/test/A2/download_tweets_extend_nolf.txt ~/A2/
+   74  cd
+   75  cp /home/test/A1/downloaded_hashtags_extend.csv A2
+   76  cd a2
+   77  cd A2
    78  ls
-   79  cat Ws3.txt
-   80  ls
-   81  cat Ws3.txt
-   82  git add cmds.log
-   83  git add Ws3.txt
-   84  git status
-   85  git branch -M main
-   86  git remote add origin git@github.com:shamikamm/WS_3.git
-   87  git push -u origin main
-   88  git remote rm origin
-   89  git remote add origin git@github.com:shamikamm/WS_3.git
-   90  git push -u origin main
-   91  git config
-   92   git push -u origin main
-   93  git remote add origin git@github.com:shamikamm/WS_3.git
-   94  git remote rm origin
-   95  git init
-   96  git remote add origin git@github.com:shamikamm/WS_3.git
-   97  git push -u origin main
-   98  exit
-   99  mkdir WS3
-  100  cd WS3
-  101  pwd
-  102  ls
-  103  git init
-  104  script ws3.txt
-  105  history
-  106  script ws3.txt
-  107  vi ws3.txt
-  108  git init
-  109  cd ws3
-  110  pwd
-  111  ls
-  112  git add cmds.log
-  113  git add Ws3.txt
-  114  git branch -M main
-  115  git commit -m "first commit"
-  116  git status
-  117  git remote add origin git@github.com:shamikamm/WS_3.git
-  118  git push -u origin main
-  119  cd ws3
-  120  pwd
-  121  ls
-  122  vi ws3
-  123  git init
-  124  cat vi ws3
-  125  git add cmds.log
-  126  git add ws3
-  127  git commit -m "first commit"
-  128  git branch -M main
-  129  git remote add origin git@github.com:shamikamm/WS_3.git
-  130  git push -u origin main
-  131  git rm remote origin
-  132  git rm origin
-  133  git remote rm origin
-  134  git@github.com:shamikamm/WS_3.git
-  135  https://github.com/shamikamm/WS_3.git
+   79  cp /home/test/A1/downloaded_tweets_extend_nolf.txt
+   80  cp /home/test/A1/downloaded_tweets_extend_nolf.txt ~/A2/
+   81  cd
+   82  cd A1/
+   83  ls
+   84  ls -latr
+   85  cp /home/test/A1/downloaded_tweets_extend.csv downloaded_tweets_extend.csv
+   86  ls 
+   87  cp /home/test/A1/downloaded_tweets_extend_nolf.txt downloaded_tweets_extend_nolf.txt
+   88  cp /home/test/A1/downloaded_tweets_extend_original_nolf.csv downloaded_tweets_extend_original_nolf.csv
+   89  cp /home/test/A1/downloaded_tweets_extend_original.csv downloaded_tweets_extend_original.csv
+   90  ls
+   91  cd
+   92  cp /home/test/A1/downloaded_tweets_extend_nolf.txt ~/A2/
+   93  cp /home/test/A1/downloaded_tweets_extend.txt ~/A2/
+   94  cp downloaded_tweets_extend.csv downloaded_tweets_extend.csv_A2
+   95  cd
+   96  cd A1/
+   97  cp downloaded_tweets_extend.csv A2
+   98  cd 
+   99  cd A2/
+  100  ls
+  101  cd
+  102  cd A1
+  103  ls -latr
+  104  cd A1
+  105  cd A1/
+  106  ls
+  107  cp /home/test/A1/downloaded_hashtags_extend.csv downloaded_hashtags_extend.csv
+  108  ls
+  109  ls -latr
+  110  cd
+  111  cp /home/test/A1/downloaded_tweets_extend_nolf.txt ~/A2/
+  112  cp /home/test/A1/downloaded_tweets_extend_original_nolf.txt ~/A2/
+  113  cd A1
+  114  LS
+  115  ls -late
+  116  ls -latr
+  117  more downloaded_hashtags_extend.csv
+  118  ls
+  119  cd A1/
+  120  LS -LATR
+  121  ls -latr
+  122  head downloaded_tweets_extend.csv
+  123  cd
+  124  cd A2/
+  125  LS
+  126  ls -latr
+  127  ls
+  128  cs Ws1
+  129  cd Ws1
+  130  pwd
+  131  ls
+  132  cd 
+  133  cd ws_2
+  134  pwd
+  135  ls
   136  cd
-  137  ls
-  138   ~/.ssh/config
-  139  ls
-  140  rm -rf amazon_reviews_us_Books_v1_02.tsv.gz.1
-  141  ls
-  142  mkdir A2
-  143  cd A2/
-  144  pwd
-  145  cp downloaded_tweets_extend_original_nolf.csv
-  146  cp downloaded_tweets_extend_original_nolf.csv A2
-  147  cp --help
-  148  ls -latr
-  149  ls
-  150  cp downloaded_tweets_extend.csv A2
-  151  wget downloaded_tweets_extend.csv
-  152  exit
-  153  cd a2/
-  154  cs A2/
-  155  cd A2
+  137  mkdir ws4
+  138  cd ws_2
+  139  mv amazon_reviews_us_Books_v1_02.tsv.gz.1 ws4
+  140  cd
+  141  cd ws4
+  142  ls
+  143  cd ws_2
+  144  ls
+  145  cp amazon_reviews_us_Books_v1_02.tsv /ws4
+  146  mv amazon_reviews_us_Books_v1_02.tsv /ws4
+  147  cp amazon_reviews_us_Books_v1_02.tsv ~
+  148  cd
+  149  pwd
+  150  ls
+  151  cd ws4
+  152  pwd
+  153  ls
+  154  cp amazon_reviews_us_Books_v1_02.tsv amazon_reviews_us_Books_v1_02.tsv
+  155  cd
   156  pwd
-  157  cp home/test/A1/downloaded_tweets_extend_nolf.txt ~/A2/cp /home/test/A1/downloaded_tweets__extend_original_nolf.txt ~/A2/
-  158  mkdir ~/A2/
-  159  cd A2
-  160  pwd
-  161  ls 
-  162  cp /home/test/A1/downloaded_tweets_extend_nolf.txt ~/A2/
-  163  cd
-  164  cp /home/test/A1/downloaded_tweets_extend_nolf.txt ~/A2/
-  165  cp /home/test/A1/downloaded_tweets_extend_original_nolf.txt ~/A2/
-  166  ls
-  167  cd A1
+  157  ls
+  158  cp amazon_reviews_us_Books_v1_02.tsv.gz ws4
+  159  ls
+  160  cd ws4/
+  161  pwd
+  162  ls
+  163  head amazon_reviews_us_Books_v1_02.tsv.gz
+  164  rm amazon_reviews_us_Books_v1_02.tsv.gz
+  165  ls
+  166  cd
+  167  rm amazon_reviews_us_Books_v1_02.tsv.gz
   168  ls
-  169  head A1
-  170  cd
-  171  cd ws3
-  172  ls
-  173  cd
-  174  ls
-  175  rm -rf A2
-  176  cd
-  177  ls
-  178  cp /home/test/A1/downloaded_tweets_extend_nolf.txt ~/A2/
-  179  cp /home/test/A1/downloaded_tweets_extend_original_nolf.txt ~/A2/
-  180  mkdir ~/A2/
-  181  ls
-  182  cp /home/test/A1/downloaded_tweets_extend_nolf.txt ~/A2/
-  183  cd A2
-  184  cp /home/test/A1/downloaded_hashtags_extend.csv A2
+  169  cp amazon_reviews_us_Books_v1_02.tsv ws4
+  170  cd ws4/
+  171  ls
+  172  head amazon_reviews_us_Books_v1_02.tsv
+  173  git init
+  174  alias l = " ls -latr "
+  175  cd
+  176  pwd
+  177  vi ~/.bashrc
+  178  cd ws4/
+  179  mkdir {CUSTOMERS, PRODUCTS}
+  180  ls
+  181  grep "12257412" amazon_reviews_us_Books_v1_02.tsv | cut -f 9 >CUSTOMERS/12257412.txt
+  182  mkdir CUTSOMERS
+  183  grep "12257412" amazon_reviews_us_Books_v1_02.tsv | cut -f 9 >CUSTOMERS/12257412.txt
+  184  mkdir CUSTOMERS/12257412.txt
   185  ls
-  186  head A2
-  187  ls
-  188  rm -rf A2
-  189  ls
-  190  cd A2
-  191  cd A1
-  192  ls
-  193  head A1
-  194  cd
-  195  ls
-  196  pwd
-  197  mkdir ~/A2/
-  198  cp /home/test/A1/downloaded_tweets_extend_nolf.txt ~/A2/
-  199  cp /home/test/A1/downloaded_tweets_extend_original_nolf.txt
-  200  cp /home/test/A1/downloaded_tweets_extend_original_nolf.txt ~/A2/
-  201  exit
+  186  rm CUSTOMERS
+  187  rm CUTSOMERS
+  188  cd 
+  189  rm -rf CUSTOMERS
+  190  cd ws4
+  191  ls
+  192  rm -rf CUSTOMERS
+  193  ls
+  194  fgrep “12257412” amazon_reviews_us_Books_v1_02.tsv | cut -f 9 >> CUSTOMERS/12257412.txt
+  195  rmdir CUSTOMERS
+  196  rm - r 
+  197  re -r
+  198  rm dir
+  199  rmdir
+  200  rmdir --help
+  201  rm -rf CUSTOMERS,  PRODUCTS
   202  ls
-  203  cp /home/test/A2/download_tweets_extend_nolf.txt ~/A2/
-  204  cd A2/
-  205  pwd
+  203  rm -rf {CUSTOMERS,  CUTSOMERS  PRODUCTS}
+  204  ls
+  205  mkdir CUSTOMERS
   206  ls
-  207  cp /home/test/A2/download_tweets_extend_nolf.txt ~/A2/
-  208  cd A1
-  209  cd
-  210  cd A1/
+  207  grep “12257412” amazon_reviews_us_Books_v1_02.tsv | cut -f 9 >> CUSTOMERS/12257412.txt
+  208  grep "50732546" amazon_reviews_us_Books_v1_02.tsv | cut -f 9 >> CUSTOMERS/50732546.txt
+  209  grep "31048862" amazon_reviews_us_Books_v1_02.tsv | cut -f 9 >> CUSTOMERS/31048862.txt
+  210  mkdir PRODUCTS
   211  ls
-  212  cp cp /home/test/A2/download_tweets_extend_nolf.txt ~/A2/
-  213  cd
-  214  cp /home/test/A1/downloaded_hashtags_extend.csv A2
-  215  cd a2
-  216  cd A2
-  217  ls
-  218  cp /home/test/A1/downloaded_tweets_extend_nolf.txt
-  219  cp /home/test/A1/downloaded_tweets_extend_nolf.txt ~/A2/
-  220  cd
-  221  cd A1/
-  222  ls
-  223  ls -latr
-  224  cp /home/test/A1/downloaded_tweets_extend.csv downloaded_tweets_extend.csv
-  225  ls 
-  226  cp /home/test/A1/downloaded_tweets_extend_nolf.txt downloaded_tweets_extend_nolf.txt
-  227  cp /home/test/A1/downloaded_tweets_extend_original_nolf.csv downloaded_tweets_extend_original_nolf.csv
-  228  cp /home/test/A1/downloaded_tweets_extend_original.csv downloaded_tweets_extend_original.csv
-  229  ls
-  230  cd
-  231  cp /home/test/A1/downloaded_tweets_extend_nolf.txt ~/A2/
-  232  cp /home/test/A1/downloaded_tweets_extend.txt ~/A2/
-  233  cp downloaded_tweets_extend.csv downloaded_tweets_extend.csv_A2
-  234  cd
-  235  cd A1/
-  236  cp downloaded_tweets_extend.csv A2
-  237  cd 
-  238  cd A2/
-  239  ls
-  240  cd
-  241  cd A1
-  242  ls -latr
-  243  cd A1
-  244  cd A1/
-  245  ls
-  246  cp /home/test/A1/downloaded_hashtags_extend.csv downloaded_hashtags_extend.csv
-  247  ls
-  248  ls -latr
-  249  cd
-  250  cp /home/test/A1/downloaded_tweets_extend_nolf.txt ~/A2/
-  251  cp /home/test/A1/downloaded_tweets_extend_original_nolf.txt ~/A2/
-  252  cd A1
-  253  LS
-  254  ls -late
-  255  ls -latr
-  256  more downloaded_hashtags_extend.csv
+  212  grep "0811828964" amazon_reviews_us_Books_v1_02.tsv | cut -f 9 >> PRODUCTS/0811828964.txt
+  213  grep "0373836635" amazon_reviews_us_Books_v1_02.tsv | cut -f 9 >> PRODUCTS/0373836635.txt
+  214  grep "0262181533" amazon_reviews_us_Books_v1_02.tsv | cut -f 9 >> PRODUCTS/0262181533.txt
+  215  vi CUSTOMERS
+  216  head CUSTOMERS
+  217  less CUSTOMERS
+  218  exit
+  219  cd ws4
+  220  pwd
+  221  ls
+  222  cd PRODUCTS/
+  223  pwd
+  224  ls
+  225  head 0262181533.txt
+  226  cat 0262181533.txt
+  227  cat 0373836635.txt
+  228  0811828964.txt
+  229  cat 0811828964.txt
+  230  bc
+  231  cd ws4
+  232  ls
+  233  pwd
+  234  cd CUSTOMERS
+  235  pwd
+  236  ls
+  237  more 12257412.txt
+  238  cat 12257412.txt
+  239  31048862.txt
+  240  cat 31048862.txt
+  241  man bc
+  242  bc -h
+  243  bc
+  244  vi 31048862.txt
+  245  cat 12257412.txt
+  246  cat 50732546.txt
+  247  clear
+  248  head 50732546.txt
+  249  history
+  250  mkdir ws4
+  251  script ws4.txt
+  252  pwd
+  253  ls
+  254  cp amazon_reviews_us_Books_v1_02.tsv ws4
+  255  cd ws4/
+  256  pwd
   257  ls
-  258  cd A1/
-  259  LS -LATR
-  260  ls -latr
-  261  head downloaded_tweets_extend.csv
-  262  cd
-  263  cd A2/
-  264  LS
-  265  ls -latr
+  258  head amazon_reviews_us_Books_v1_02.tsv
+  259  grep "50732546" grep “cid” amazon_reviews_us_Books_v1_02.tsv | cut -f 9 >> CUSTOMERS/cid.txt
+  260  cd
+  261  rm -rf ws4
+  262  ls
+  263  git init
+  264  mkdir ws4
+  265  cp amazon_reviews_us_Books_v1_02.tsv ws4
   266  ls
-  267  cs Ws1
-  268  cd Ws1
-  269  pwd
-  270  ls
-  271  cd 
-  272  cd ws_2
-  273  pwd
-  274  ls
-  275  cd
-  276  mkdir ws4
-  277  cd ws_2
-  278  mv amazon_reviews_us_Books_v1_02.tsv.gz.1 ws4
-  279  cd
-  280  cd ws4
-  281  ls
-  282  cd ws_2
-  283  ls
-  284  cp amazon_reviews_us_Books_v1_02.tsv /ws4
-  285  mv amazon_reviews_us_Books_v1_02.tsv /ws4
-  286  cp amazon_reviews_us_Books_v1_02.tsv ~
-  287  cd
-  288  pwd
-  289  ls
+  267  cd ws4/
+  268  ls
+  269  grep "50732546" amazon_reviews_us_Books_v1_02.tsv | cut -f 9 >> CUSTOMERS/50732546.txt
+  270  mkdir CUSTOMERS
+  271  ls
+  272  mkdir PRODUCTS
+  273  ls
+  274  grep "50732546" amazon_reviews_us_Books_v1_02.tsv | cut -f 9 >> CUSTOMERS/50732546.txt
+  275  grep "31048862" amazon_reviews_us_Books_v1_02.tsv | cut -f 9 >> CUSTOMERS/31048862.txt
+  276  grep "51964897" amazon_reviews_us_Books_v1_02.tsv | cut -f 9 >> CUSTOMERS/51964897.txt
+  277  grep "0373836635"amazon_reviews_us_Books_v1_02.tsv | cut -f 9 >> PRODUCTS/0373836635.txt
+  278  cd ws4/
+  279  ls
+  280  head amazon_reviews_us_Books_v1_02.tsv
+  281  grep "0811828964" amazon_reviews_us_Books_v1_02.tsv | cut -f 9 >> PRODUCTS/0811828964.txt
+  282  grep "0373836635" amazon_reviews_us_Books_v1_02.tsv | cut -f 9 >> PRODUCTS/0373836635.txt
+  283  grep "0262181533" amazon_reviews_us_Books_v1_02.tsv | cut -f 9 >> PRODUCTS/0262181533.txt
+  284  cd CUSTOMERS
+  285  ls
+  286  awk 'BEGIN{s=0;}{s+=$1;}END{print s/NR;}' 31048862.txt
+  287  awk 'BEGIN{s=0;}{s+=$1;}END{print s/NR;}' 50732546.txt
+  288  awk 'BEGIN{s=0;}{s+=$1;}END{print s/NR;}' 51964897.txt
+  289  cd 
   290  cd ws4
-  291  pwd
+  291  cd PRODUCTS
   292  ls
-  293  cp amazon_reviews_us_Books_v1_02.tsv amazon_reviews_us_Books_v1_02.tsv
-  294  cd
-  295  pwd
-  296  ls
-  297  cp amazon_reviews_us_Books_v1_02.tsv.gz ws4
-  298  ls
-  299  cd ws4/
-  300  pwd
-  301  ls
-  302  head amazon_reviews_us_Books_v1_02.tsv.gz
-  303  rm amazon_reviews_us_Books_v1_02.tsv.gz
-  304  ls
-  305  cd
-  306  rm amazon_reviews_us_Books_v1_02.tsv.gz
-  307  ls
-  308  cp amazon_reviews_us_Books_v1_02.tsv ws4
-  309  cd ws4/
-  310  ls
-  311  head amazon_reviews_us_Books_v1_02.tsv
-  312  git init
-  313  alias l = " ls -latr "
-  314  cd
-  315  pwd
-  316  vi ~/.bashrc
-  317  cd ws4/
-  318  mkdir {CUSTOMERS, PRODUCTS}
-  319  ls
-  320  grep "12257412" amazon_reviews_us_Books_v1_02.tsv | cut -f 9 >CUSTOMERS/12257412.txt
-  321  mkdir CUTSOMERS
-  322  grep "12257412" amazon_reviews_us_Books_v1_02.tsv | cut -f 9 >CUSTOMERS/12257412.txt
-  323  mkdir CUSTOMERS/12257412.txt
-  324  ls
-  325  rm CUSTOMERS
-  326  rm CUTSOMERS
-  327  cd 
-  328  rm -rf CUSTOMERS
-  329  cd ws4
-  330  ls
-  331  rm -rf CUSTOMERS
+  293  awk 'BEGIN{s=0;}{s+=$1;}END{print s/NR;}' 0262181533.txt
+  294  awk 'BEGIN{s=0;}{s+=$1;}END{print s/NR;}' 0373836635.txt
+  295  awk 'BEGIN{s=0;}{s+=$1;}END{print s/NR;}' 0811828964.txt
+  296  cd
+  297  cd ws4/
+  298  history>cmds.log
+  299  cs
+  300  cd
+  301  cs ws4
+  302  cd ws4
+  303  ls
+  304  vi README
+  305  script ws4_1.txt
+  306  cat ws4*.txt >> ws4.combined.txt
+  307  git status
+  308  git add README
+  309  cd ws4
+  310  cp README ~
+  311  cd
+  312  ls
+  313  gitadd README
+  314  git add README
+  315  git add ws4.txt
+  316  git add ws4_1.txt
+  317  cd ws4
+  318  ls
+  319  cp cmds.log ~
+  320  cd
+  321  git add cmds.log
+  322  git status
+  323  git branch -M main
+  324  git commit -m "first commit"
+  325  git remote add origin https://github.com/shamikamm/ws4.git
+  326  git push -u origin main
+  327  cd A1/
+  328  pwd
+  329  ls
+  330  cd
+  331  pwd
   332  ls
-  333  fgrep “12257412” amazon_reviews_us_Books_v1_02.tsv | cut -f 9 >> CUSTOMERS/12257412.txt
-  334  rmdir CUSTOMERS
-  335  rm - r 
-  336  re -r
-  337  rm dir
-  338  rmdir
-  339  rmdir --help
-  340  rm -rf CUSTOMERS,  PRODUCTS
-  341  ls
-  342  rm -rf {CUSTOMERS,  CUTSOMERS  PRODUCTS}
+  333  rm ws4.combined.txt
+  334  ls
+  335  cd A1/
+  336  ls
+  337  cp downloaded_tweets_extend_original_nolf.tsv downloaded_tweets_extend_original_nolf.tsv
+  338  cp downloaded_tweets_extend_nolf2.tsv downloaded_tweets_extend_nolf2.tsv 
+  339  cd
+  340  wget downloaded_tweets_extend_nolf2.tsv 
+  341  cp /home/test/A1/downloaded_tweets_extend_original_nolf2.tsv ~
+  342  cp /home/test/A1/downloaded_tweets_extend_nolf2.tsv ~
   343  ls
-  344  mkdir CUSTOMERS
-  345  ls
-  346  grep “12257412” amazon_reviews_us_Books_v1_02.tsv | cut -f 9 >> CUSTOMERS/12257412.txt
-  347  grep "50732546" amazon_reviews_us_Books_v1_02.tsv | cut -f 9 >> CUSTOMERS/50732546.txt
-  348  grep "31048862" amazon_reviews_us_Books_v1_02.tsv | cut -f 9 >> CUSTOMERS/31048862.txt
-  349  mkdir PRODUCTS
-  350  ls
-  351  grep "0811828964" amazon_reviews_us_Books_v1_02.tsv | cut -f 9 >> PRODUCTS/0811828964.txt
-  352  grep "0373836635" amazon_reviews_us_Books_v1_02.tsv | cut -f 9 >> PRODUCTS/0373836635.txt
-  353  grep "0262181533" amazon_reviews_us_Books_v1_02.tsv | cut -f 9 >> PRODUCTS/0262181533.txt
-  354  vi CUSTOMERS
-  355  head CUSTOMERS
-  356  less CUSTOMERS
-  357  exit
-  358  cd ws4
-  359  pwd
-  360  ls
-  361  cd PRODUCTS/
-  362  pwd
-  363  ls
-  364  head 0262181533.txt
-  365  cat 0262181533.txt
-  366  cat 0373836635.txt
-  367  0811828964.txt
-  368  cat 0811828964.txt
-  369  bc
-  370  cd ws4
-  371  ls
-  372  pwd
-  373  cd CUSTOMERS
-  374  pwd
-  375  ls
-  376  more 12257412.txt
-  377  cat 12257412.txt
-  378  31048862.txt
-  379  cat 31048862.txt
-  380  man bc
-  381  bc -h
-  382  bc
-  383  vi 31048862.txt
-  384  cat 12257412.txt
-  385  cat 50732546.txt
-  386  clear
-  387  head 50732546.txt
-  388  history
-  389  mkdir ws4
-  390  script ws4.txt
-  391  pwd
-  392  ls
-  393  cp amazon_reviews_us_Books_v1_02.tsv ws4
-  394  cd ws4/
+  344  cp downloaded_tweets_extend_original_nolf2.tsv A2
+  345  cp downloaded_tweets_extend_nolf2.tsv A2
+  346  cd A2/
+  347  ls
+  348  rm downloaded_hashtags_extend.csv
+  349  ls
+  350  cd A2/
+  351  ls
+  352  head downloaded_tweets_extend_nolf2.tsv
+  353  head  downloaded_tweets_extend_original_nolf2.tsv
+  354  awk -F"\t" '($2 == $6) {print $0}' downloaded_tweets_extend_original_nolf2.tsv | wc
+  355  awk -F"\t" '($2 != $6) {print $0}' downloaded_tweets_extend_original_nolf2.tsv | wc
+  356  awk -F"\t" '($2 != $6) {print $0}' downloaded_tweets_extend_original_nolf2.tsv > downloaded_tweets_extend_original_nolf2_NOBOT.tsv
+  357  awk -F"\t" '($2 != $6) {print $0}' downloaded_tweets_extend_nolf2.tsv > downloaded_tweets_extend_nolf2_NOBOT.tsv
+  358  ls
+  359  head downloaded_tweets_extend_original_nolf2_NOBOT.tsv
+  360  head downloaded_tweets_extend_nolf2_NOBOT.tsv
+  361  grep retweeted downloaded_tweets_extend_nolf2_NOBOT.tsv
+  362  cd A2
+  363  pwd
+  364  ls
+  365  head -n 2 downloaded_tweets_extend_original_nolf2_NOBOT.tsv
+  366  awk -F"\t" '{print $6}' downloaded_tweets_extend_original_nolf_NOBOT.tsv | head -n 10
+  367  awk -F"\t" '{print $6}' downloaded_tweets_extend_original_nolf2_NOBOT.tsv | head -n 10
+  368  awk -F"\t" '{print $6}' downloaded_tweets_extend_original_nolf2_NOBOT.tsv | tail -n 10
+  369  head -n 5 downloaded_tweets_extend_original_nolf2_NOBOT.tsv
+  370  cut -f 6 -d "\t" downloaded_tweets_extend_original_nolf2_NOBOT.tsv >> in_reply_to_user_id.txt
+  371  cut -f 6 -d " " downloaded_tweets_extend_original_nolf2_NOBOT.tsv >> in_reply_to_user_id.txt
+  372  head -n 10 in_reply_to_user_id.txt
+  373  ls
+  374  rm in_reply_to_user_id.txt
+  375  rm downloaded_tweets_extend_nolf2.tsv
+  376  rm  downloaded_tweets_extend_original_nolf2.tsv
+  377  ls
+  378  awk -F"\t" '{print $6}' downloaded_tweets_extend_original_nolf2_NOBOT.tsv >> in_reply_to_user_id.txt
+  379  ls
+  380  head in_reply_to_user_id.txt
+  381  cat in_reply_to_user_id.txt
+  382  sort in_reply_to_user_id.txt | unique -c } sort -n | tail
+  383  sort in_reply_to_user_id.txt | unique -c | sort -n | tail
+  384  grep retweeted in_reply_to_user_id.txt
+  385  grep retweeted in_reply_to_user_id.txt | head -n 10
+  386  cd
+  387  pwd
+  388  ls
+  389  cd A2/
+  390  pwd
+  391  ls
+  392  cut -f 2,6exit
+  393  exit
+  394  cd A2/
   395  pwd
   396  ls
-  397  head amazon_reviews_us_Books_v1_02.tsv
-  398  grep "50732546" grep “cid” amazon_reviews_us_Books_v1_02.tsv | cut -f 9 >> CUSTOMERS/cid.txt
-  399  cd
-  400  rm -rf ws4
-  401  ls
-  402  git init
-  403  mkdir ws4
-  404  cp amazon_reviews_us_Books_v1_02.tsv ws4
+  397  head -n 5 downloaded_tweets_extend_original_nolf2_NOBOT.tsv
+  398  awk -F "\t" '{print$2}' downloaded_tweets_extend_original_nolf2_NOBOT.tsv >> authors.txt
+  399  ls
+  400  head -n 5 authors.txt
+  401  sort authors.txt | unique -c | sort -n | tail -10
+  402  sort authors.txt | uniq -c | sort -n | tail -10
+  403  awk -F "\t" '{print$2}' downloaded_tweets_extend_original_nolf2_NOBOT.tsv | head -n 1-
+  404  awk -F "\t" '{print$2}' downloaded_tweets_extend_original_nolf2_NOBOT.tsv | head -n 10
   405  ls
-  406  cd ws4/
+  406  rm in_reply_to_user_id.txt
   407  ls
-  408  grep "50732546" amazon_reviews_us_Books_v1_02.tsv | cut -f 9 >> CUSTOMERS/50732546.txt
-  409  mkdir CUSTOMERS
-  410  ls
-  411  mkdir PRODUCTS
-  412  ls
-  413  grep "50732546" amazon_reviews_us_Books_v1_02.tsv | cut -f 9 >> CUSTOMERS/50732546.txt
-  414  grep "31048862" amazon_reviews_us_Books_v1_02.tsv | cut -f 9 >> CUSTOMERS/31048862.txt
-  415  grep "51964897" amazon_reviews_us_Books_v1_02.tsv | cut -f 9 >> CUSTOMERS/51964897.txt
-  416  grep "0373836635"amazon_reviews_us_Books_v1_02.tsv | cut -f 9 >> PRODUCTS/0373836635.txt
-  417  cd ws4/
-  418  ls
-  419  head amazon_reviews_us_Books_v1_02.tsv
-  420  grep "0811828964" amazon_reviews_us_Books_v1_02.tsv | cut -f 9 >> PRODUCTS/0811828964.txt
-  421  grep "0373836635" amazon_reviews_us_Books_v1_02.tsv | cut -f 9 >> PRODUCTS/0373836635.txt
-  422  grep "0262181533" amazon_reviews_us_Books_v1_02.tsv | cut -f 9 >> PRODUCTS/0262181533.txt
-  423  cd CUSTOMERS
-  424  ls
-  425  awk 'BEGIN{s=0;}{s+=$1;}END{print s/NR;}' 31048862.txt
-  426  awk 'BEGIN{s=0;}{s+=$1;}END{print s/NR;}' 50732546.txt
-  427  awk 'BEGIN{s=0;}{s+=$1;}END{print s/NR;}' 51964897.txt
-  428  cd 
-  429  cd ws4
-  430  cd PRODUCTS
-  431  ls
-  432  awk 'BEGIN{s=0;}{s+=$1;}END{print s/NR;}' 0262181533.txt
-  433  awk 'BEGIN{s=0;}{s+=$1;}END{print s/NR;}' 0373836635.txt
-  434  awk 'BEGIN{s=0;}{s+=$1;}END{print s/NR;}' 0811828964.txt
-  435  cd
-  436  cd ws4/
-  437  history>cmds.log
-  438  cs
-  439  cd
-  440  cs ws4
-  441  cd ws4
+  408  awk -F "\t" '{print$6}' downloaded_tweets_extend_original_nolf2_NOBOT.tsv >> reply_user_id.txt
+  409  ls
+  410  sort reply_user_id.txt | uniq -c | sort -n | tail -10
+  411  head -n downloaded_tweets_extend_nolf2_NOBOT.tsv
+  412  head -5 downloaded_tweets_extend_nolf2_NOBOT.tsv
+  413  ghghjls
+  414  ls
+  415  awk -F "\t" '{print$6}' downloaded_tweets_extend_nolf2_NOBOT.tsv >> reply.txt
+  416  ls
+  417  grep "retweeted" reply.txt | sort -n | tail -10
+  418  grep "type=retweeted" reply.txt
+  419  head reply.txt
+  420  rm reply.txt
+  421  ls
+  422  exit
+  423  ls
+  424  rm cmds.log
+  425  ls
+  426  cd A2
+  427  pwd
+  428  ls
+  429  ls -latr
+  430  cut -d "\t" -f 2 downloaded_tweets_extend_original_nolf2_NOBOT.tsv > a.txt
+  431  cut --help
+  432  q
+  433  ut -d "\" -f 2 downloaded_tweets_extend_original_nolf2_NOBOT.tsv > a.txt
+  434  q
+  435  exit
+  436  wq
+  437  cut -d "\" -f 2 downloaded_tweets_extend_original_nolf2_NOBOT.tsv > a.txt
+  438  cut -d "\" -f 2 downloaded_tweets_extend_original_nolf2_NOBOT.tsv >> a.txt
+  439  ls
+  440  cd A2/
+  441  pwd
   442  ls
-  443  vi README
-  444  script ws4_1.txt
-  445  cat ws4*.txt >> ws4.combined.txt
-  446  git status
-  447  git add README
-  448  cd ws4
-  449  cp README ~
-  450  cd
-  451  ls
-  452  gitadd README
-  453  git add README
-  454  git add ws4.txt
-  455  git add ws4_1.txt
-  456  cd ws4
+  443  rm a.txt
+  444  rm authors.txt
+  445  rm reply_user_id.txt
+  446  ls
+  447  cut -d "\" -f 2 downloaded_tweets_extend_original_nolf2_NOBOT.tsv >> a.txt
+  448  ls
+  449  cd
+  450  ls
+  451   rm README
+  452  ls
+  453  cd A2
+  454  pwd
+  455  ls -latr
+  456  cut -f 2 -d " " downloaded_tweets_extend_original_nolf2_NOBOT.tsv >> a.txt
   457  ls
-  458  cp cmds.log ~
-  459  cd
-  460  git add cmds.log
-  461  git status
-  462  git branch -M main
-  463  git commit -m "first commit"
-  464  git remote add origin https://github.com/shamikamm/ws4.git
-  465  git push -u origin main
-  466  cd A1/
-  467  pwd
-  468  ls
-  469  cd
-  470  pwd
-  471  ls
-  472  rm ws4.combined.txt
-  473  ls
-  474  cd A1/
-  475  ls
-  476  cp downloaded_tweets_extend_original_nolf.tsv downloaded_tweets_extend_original_nolf.tsv
-  477  cp downloaded_tweets_extend_nolf2.tsv downloaded_tweets_extend_nolf2.tsv 
-  478  cd
-  479  wget downloaded_tweets_extend_nolf2.tsv 
-  480  cp /home/test/A1/downloaded_tweets_extend_original_nolf2.tsv ~
-  481  cp /home/test/A1/downloaded_tweets_extend_nolf2.tsv ~
+  458  sort a.txt |uniq - c| sort -n | tail -10
+  459  head -n 5 a.txt
+  460  sort -n a.txt | uniq -c | head
+  461  head downloaded_tweets_extend_original_nolf2_NOBOT.tsv
+  462  cut -f 2 -d "\" downloaded_tweets_extend_original_nolf2_NOBOT.tsv >> b.txt
+  463  cut -f 2 -d "/" downloaded_tweets_extend_original_nolf2_NOBOT.tsv >> c.txt
+  464  head c.txt
+  465  ls
+  466  rm c
+  467  rm c.txt
+  468  rm a.txt
+  469  ls
+  470  awk -F "\" '{print $2}' downloaded_tweets_extend_original_nolf2_NOBOT.tsv >> a.txt
+  471  awk -F "\t" '{print $2}' downloaded_tweets_extend_original_nolf2_NOBOT.tsv >> a.txt
+  472  ls
+  473  head a.txt
+  474  sort a.txt | uniq - c | sort -n | tail -10
+  475  sort a.txt | uniq - c | sort -n |
+  476  sort -n a.txt |uniq -c
+  477  sort -n a.txt |uniq -c |tail -10
+  478  sort -n a.txt |uniq -c |tail
+  479  sort a.txt |uniq -c |sort -n |tail -n
+  480  sort a.txt |uniq -c |sort -n |tail -15
+  481  sort a.txt |uniq -c |sort -n |tail -10
   482  ls
-  483  cp downloaded_tweets_extend_original_nolf2.tsv A2
-  484  cp downloaded_tweets_extend_nolf2.tsv A2
-  485  cd A2/
-  486  ls
-  487  rm downloaded_hashtags_extend.csv
-  488  ls
-  489  cd A2/
-  490  ls
-  491  head downloaded_tweets_extend_nolf2.tsv
-  492  head  downloaded_tweets_extend_original_nolf2.tsv
-  493  awk -F"\t" '($2 == $6) {print $0}' downloaded_tweets_extend_original_nolf2.tsv | wc
-  494  awk -F"\t" '($2 != $6) {print $0}' downloaded_tweets_extend_original_nolf2.tsv | wc
-  495  awk -F"\t" '($2 != $6) {print $0}' downloaded_tweets_extend_original_nolf2.tsv > downloaded_tweets_extend_original_nolf2_NOBOT.tsv
-  496  awk -F"\t" '($2 != $6) {print $0}' downloaded_tweets_extend_nolf2.tsv > downloaded_tweets_extend_nolf2_NOBOT.tsv
+  483  awk -F "\t" '{print $6}' downloaded_tweets_extend_original_nolf2_NOBOT.tsv >> u.txt
+  484  sort u.txt |uniq -c |sort -n | tail -10
+  485  head downloaded_tweets_extend_nolf2_NOBOT.tsv
+  486  awk -F "\t" '{print $5}' downloaded_tweets_extend_nolf2_NOBOT.tsv >> b.txt
+  487  grep "retweeted" b.txt >> d.txt
+  488  sort d.txt | uniq -c | sort -n | tail -10
+  489  ls
+  490  head downloaded_tweets_extend_nolf2_NOBOT.tsv
+  491  awk -F "\t" '{print $4}' downloaded_tweets_extend_nolf2_NOBOT.tsv >> f.txt
+  492  sed '/^$/d' f.txt
+  493  sort f.txt | uniq -c | sort -n | tail -30
+  494  tr '[:upper:]' '[:lower:]' f.txt
+  495  ls
+  496  head downloaded_tweets_extend_nolf2_NOBOT.tsv
   497  ls
-  498  head downloaded_tweets_extend_original_nolf2_NOBOT.tsv
-  499  head downloaded_tweets_extend_nolf2_NOBOT.tsv
-  500  grep retweeted downloaded_tweets_extend_nolf2_NOBOT.tsv
-  501  cd A2
-  502  pwd
-  503  ls
-  504  head -n 2 downloaded_tweets_extend_original_nolf2_NOBOT.tsv
-  505  awk -F"\t" '{print $6}' downloaded_tweets_extend_original_nolf_NOBOT.tsv | head -n 10
-  506  awk -F"\t" '{print $6}' downloaded_tweets_extend_original_nolf2_NOBOT.tsv | head -n 10
-  507  awk -F"\t" '{print $6}' downloaded_tweets_extend_original_nolf2_NOBOT.tsv | tail -n 10
-  508  head -n 5 downloaded_tweets_extend_original_nolf2_NOBOT.tsv
-  509  cut -f 6 -d "\t" downloaded_tweets_extend_original_nolf2_NOBOT.tsv >> in_reply_to_user_id.txt
-  510  cut -f 6 -d " " downloaded_tweets_extend_original_nolf2_NOBOT.tsv >> in_reply_to_user_id.txt
-  511  head -n 10 in_reply_to_user_id.txt
-  512  ls
-  513  rm in_reply_to_user_id.txt
-  514  rm downloaded_tweets_extend_nolf2.tsv
-  515  rm  downloaded_tweets_extend_original_nolf2.tsv
-  516  ls
-  517  awk -F"\t" '{print $6}' downloaded_tweets_extend_original_nolf2_NOBOT.tsv >> in_reply_to_user_id.txt
-  518  ls
-  519  head in_reply_to_user_id.txt
-  520  cat in_reply_to_user_id.txt
-  521  sort in_reply_to_user_id.txt | unique -c } sort -n | tail
-  522  sort in_reply_to_user_id.txt | unique -c | sort -n | tail
-  523  grep retweeted in_reply_to_user_id.txt
-  524  grep retweeted in_reply_to_user_id.txt | head -n 10
-  525  cd
-  526  pwd
-  527  ls
-  528  cd A2/
-  529  pwd
-  530  ls
-  531  cut -f 2,6exit
-  532  exit
-  533  cd A2/
-  534  pwd
-  535  ls
-  536  head -n 5 downloaded_tweets_extend_original_nolf2_NOBOT.tsv
-  537  awk -F "\t" '{print$2}' downloaded_tweets_extend_original_nolf2_NOBOT.tsv >> authors.txt
-  538  ls
-  539  head -n 5 authors.txt
-  540  sort authors.txt | unique -c | sort -n | tail -10
-  541  sort authors.txt | uniq -c | sort -n | tail -10
-  542  awk -F "\t" '{print$2}' downloaded_tweets_extend_original_nolf2_NOBOT.tsv | head -n 1-
-  543  awk -F "\t" '{print$2}' downloaded_tweets_extend_original_nolf2_NOBOT.tsv | head -n 10
-  544  ls
-  545  rm in_reply_to_user_id.txt
-  546  ls
-  547  awk -F "\t" '{print$6}' downloaded_tweets_extend_original_nolf2_NOBOT.tsv >> reply_user_id.txt
-  548  ls
-  549  sort reply_user_id.txt | uniq -c | sort -n | tail -10
-  550  head -n downloaded_tweets_extend_nolf2_NOBOT.tsv
-  551  head -5 downloaded_tweets_extend_nolf2_NOBOT.tsv
-  552  ghghjls
-  553  ls
-  554  awk -F "\t" '{print$6}' downloaded_tweets_extend_nolf2_NOBOT.tsv >> reply.txt
-  555  ls
-  556  grep "retweeted" reply.txt | sort -n | tail -10
-  557  grep "type=retweeted" reply.txt
-  558  head reply.txt
-  559  rm reply.txt
+  498  head d.txt
+  499  head b.txt
+  500  head u.txt
+  501  cat u.txt
+  502  less
+  503  less u.txt
+  504  ls
+  505  head f.txt
+  506  awk -F "\t" '{4,5}' downloaded_tweets_extend_nolf2_NOBOT.tsv >> s.txt
+  507  awk -F "\t" '{print $4,5}' downloaded_tweets_extend_nolf2_NOBOT.tsv >> s.txt
+  508  head s.txt
+  509  sort s.txt |uniq -c |sort -n |tail -30
+  510  rm s.txt
+  511  ls
+  512  awk -F "\t" '{print $4, $5}' downloaded_tweets_extend_nolf2_NOBOT.tsv >> s.txt
+  513  ls
+  514  sort s.txt |uniq -c |sort -n |tail -30
+  515  head f.txt
+  516  mv d.txt f.txt
+  517  head f.txt
+  518  cat f.txt
+  519  exit
+  520  mkdir a2
+  521  cp downloaded_tweets_extend_nolf2.tsv a2
+  522  cp downloaded_tweets_extend_original_nolf2.tsv
+  523  cp downloaded_tweets_extend_original_nolf2.tsv a2
+  524  cd a2/
+  525  pwd
+  526  ls
+  527  awk -F "\t" '{print $2}' downloaded_tweets_extend_original_nolf2.tsv >> authors.txt
+  528  sort authors.txt |uniq -c |sort -n | tail -10
+  529  awk -F "\t" '{print $6}'  downloaded_tweets_extend_original_nolf2.tsv >> replied.txt
+  530  sort replied.txt |uniq -c |sort -n |tail -10
+  531  awk -F "\t" '{print $5}' downloaded_tweets_extend_nolf2.tsv >> reference.txt
+  532  head -n 5 reference.txt
+  533  grep "retweeted" reference.txt >> retweeted.txt
+  534  sort retweeted,txt |uniq -c |sort -n |tail -10
+  535  head retweeted.txt
+  536  sort retweeted.txt |uniq -c |sort -n |tail -10
+  537  cut -f 4 downloaded_tweets_extend_nolf2.tsv >> hashtags.txt
+  538  sort hashtags.txt |uniq -c |sort -n | tail -30
+  539  ls
+  540  cut -f 4,5 downloaded_tweets_extend_nolf2.tsv >> r.txt
+  541  grep "retweeted" r.txt |uniq -c |sort -n |tail -30
+  542  grep "replied to" r.txt |uniq -c |sort -n |tail 30
+  543  grep "replied to" r.txt |uniq -c |sort -n |tail -30
+  544  grep "replied_to" r.txt |uniq -c |sort -n |tail -30
+  545  grep "replied_to" r.txt |uniq -c |sort -n |head -30
+  546  sed '/^$/d' hashtags.txt
+  547  grep "\"" hashtags.txt |uniq -c |sort -n |tail -30
+  548  history
+  549  script A2.txt
+  550  vi A2.txt
+  551  git add A2.txt
+  552  git status
+  553  git branch -M main
+  554  git commit -m "first commit"
+  555  git remote add origin https://github.com/shamikamm/A2.git
+  556  git remote rm origin
+  557  git remote add origin https://github.com/shamikamm/A2.git
+  558  git push -u origin main
+  559  exit
   560  ls
-  561  exit
+  561  rm ws4_1.txt
   562  ls
-  563  rm cmds.log
+  563  rm ws4.txt
   564  ls
-  565  cd A2
-  566  pwd
+  565  rm ws3.txt
+  566  rm a1.txt
   567  ls
-  568  ls -latr
-  569  cut -d "\t" -f 2 downloaded_tweets_extend_original_nolf2_NOBOT.tsv > a.txt
-  570  cut --help
-  571  q
-  572  ut -d "\" -f 2 downloaded_tweets_extend_original_nolf2_NOBOT.tsv > a.txt
-  573  q
-  574  exit
-  575  wq
-  576  cut -d "\" -f 2 downloaded_tweets_extend_original_nolf2_NOBOT.tsv > a.txt
-  577  cut -d "\" -f 2 downloaded_tweets_extend_original_nolf2_NOBOT.tsv >> a.txt
-  578  ls
-  579  cd A2/
+  568  exit
+  569  which tmux
+  570  mkdir ws5
+  571  pwd
+  572  cd ws5
+  573  pwd
+  574  ls
+  575  cd
+  576  ls
+  577  cp amazon_reviews_us_Books_v1_02.tsv ws5
+  578  cd ws5
+  579  ls
   580  pwd
   581  ls
-  582  rm a.txt
-  583  rm authors.txt
-  584  rm reply_user_id.txt
-  585  ls
-  586  cut -d "\" -f 2 downloaded_tweets_extend_original_nolf2_NOBOT.tsv >> a.txt
-  587  ls
-  588  cd
-  589  ls
-  590   rm README
-  591  ls
-  592  cd A2
-  593  pwd
-  594  ls -latr
-  595  cut -f 2 -d " " downloaded_tweets_extend_original_nolf2_NOBOT.tsv >> a.txt
-  596  ls
-  597  sort a.txt |uniq - c| sort -n | tail -10
-  598  head -n 5 a.txt
-  599  sort -n a.txt | uniq -c | head
-  600  head downloaded_tweets_extend_original_nolf2_NOBOT.tsv
-  601  cut -f 2 -d "\" downloaded_tweets_extend_original_nolf2_NOBOT.tsv >> b.txt
-  602  cut -f 2 -d "/" downloaded_tweets_extend_original_nolf2_NOBOT.tsv >> c.txt
-  603  head c.txt
+  582  cd ws5/
+  583  ls
+  584  head amazon_reviews_us_Books_v1_02.tsv
+  585  cut -f 2 -d ' ' amazon_reviews_us_Books_v1_02.tsv | sort -n | uniq -c >> customers.txt
+  586  ls
+  587  head n5 customers.txt
+  588  more customers.txt |head
+  589  tail -1000 customers.txt >> c.txt
+  590  ls
+  591  head c.txt
+  592  cd
+  593  cd ws3
+  594  ls
+  595  head customers.txt
+  596  cd
+  597  cd ws5
+  598  pwd
+  599  ls
+  600  rm c.txt
+  601  rm customers.txt
+  602  ls
+  603  awk -F " " '{print $2}' amazon_reviews_us_Books_v1_02.tsv |sort -n |uniq -c >> customers.txt
   604  ls
-  605  rm c
-  606  rm c.txt
-  607  rm a.txt
-  608  ls
-  609  awk -F "\" '{print $2}' downloaded_tweets_extend_original_nolf2_NOBOT.tsv >> a.txt
-  610  awk -F "\t" '{print $2}' downloaded_tweets_extend_original_nolf2_NOBOT.tsv >> a.txt
-  611  ls
-  612  head a.txt
-  613  sort a.txt | uniq - c | sort -n | tail -10
-  614  sort a.txt | uniq - c | sort -n |
-  615  sort -n a.txt |uniq -c
-  616  sort -n a.txt |uniq -c |tail -10
-  617  sort -n a.txt |uniq -c |tail
-  618  sort a.txt |uniq -c |sort -n |tail -n
-  619  sort a.txt |uniq -c |sort -n |tail -15
-  620  sort a.txt |uniq -c |sort -n |tail -10
-  621  ls
-  622  awk -F "\t" '{print $6}' downloaded_tweets_extend_original_nolf2_NOBOT.tsv >> u.txt
-  623  sort u.txt |uniq -c |sort -n | tail -10
-  624  head downloaded_tweets_extend_nolf2_NOBOT.tsv
-  625  awk -F "\t" '{print $5}' downloaded_tweets_extend_nolf2_NOBOT.tsv >> b.txt
-  626  grep "retweeted" b.txt >> d.txt
-  627  sort d.txt | uniq -c | sort -n | tail -10
-  628  ls
-  629  head downloaded_tweets_extend_nolf2_NOBOT.tsv
-  630  awk -F "\t" '{print $4}' downloaded_tweets_extend_nolf2_NOBOT.tsv >> f.txt
-  631  sed '/^$/d' f.txt
-  632  sort f.txt | uniq -c | sort -n | tail -30
-  633  tr '[:upper:]' '[:lower:]' f.txt
-  634  ls
-  635  head downloaded_tweets_extend_nolf2_NOBOT.tsv
-  636  ls
-  637  head d.txt
-  638  head b.txt
-  639  head u.txt
-  640  cat u.txt
-  641  less
-  642  less u.txt
-  643  ls
-  644  head f.txt
-  645  awk -F "\t" '{4,5}' downloaded_tweets_extend_nolf2_NOBOT.tsv >> s.txt
-  646  awk -F "\t" '{print $4,5}' downloaded_tweets_extend_nolf2_NOBOT.tsv >> s.txt
-  647  head s.txt
-  648  sort s.txt |uniq -c |sort -n |tail -30
-  649  rm s.txt
-  650  ls
-  651  awk -F "\t" '{print $4, $5}' downloaded_tweets_extend_nolf2_NOBOT.tsv >> s.txt
-  652  ls
-  653  sort s.txt |uniq -c |sort -n |tail -30
-  654  head f.txt
-  655  mv d.txt f.txt
-  656  head f.txt
-  657  cat f.txt
-  658  exit
-  659  mkdir a2
-  660  cp downloaded_tweets_extend_nolf2.tsv a2
-  661  cp downloaded_tweets_extend_original_nolf2.tsv
-  662  cp downloaded_tweets_extend_original_nolf2.tsv a2
-  663  cd a2/
-  664  pwd
-  665  ls
-  666  awk -F "\t" '{print $2}' downloaded_tweets_extend_original_nolf2.tsv >> authors.txt
-  667  sort authors.txt |uniq -c |sort -n | tail -10
-  668  awk -F "\t" '{print $6}'  downloaded_tweets_extend_original_nolf2.tsv >> replied.txt
-  669  sort replied.txt |uniq -c |sort -n |tail -10
-  670  awk -F "\t" '{print $5}' downloaded_tweets_extend_nolf2.tsv >> reference.txt
-  671  head -n 5 reference.txt
-  672  grep "retweeted" reference.txt >> retweeted.txt
-  673  sort retweeted,txt |uniq -c |sort -n |tail -10
-  674  head retweeted.txt
-  675  sort retweeted.txt |uniq -c |sort -n |tail -10
-  676  cut -f 4 downloaded_tweets_extend_nolf2.tsv >> hashtags.txt
-  677  sort hashtags.txt |uniq -c |sort -n | tail -30
-  678  ls
-  679  cut -f 4,5 downloaded_tweets_extend_nolf2.tsv >> r.txt
-  680  grep "retweeted" r.txt |uniq -c |sort -n |tail -30
-  681  grep "replied to" r.txt |uniq -c |sort -n |tail 30
-  682  grep "replied to" r.txt |uniq -c |sort -n |tail -30
-  683  grep "replied_to" r.txt |uniq -c |sort -n |tail -30
-  684  grep "replied_to" r.txt |uniq -c |sort -n |head -30
-  685  sed '/^$/d' hashtags.txt
-  686  grep "\"" hashtags.txt |uniq -c |sort -n |tail -30
-  687  history
-  688  script A2.txt
-  689  vi A2.txt
-  690  git add A2.txt
-  691  git status
-  692  git branch -M main
-  693  git commit -m "first commit"
-  694  git remote add origin https://github.com/shamikamm/A2.git
-  695  git remote rm origin
-  696  git remote add origin https://github.com/shamikamm/A2.git
-  697  git push -u origin main
-  698  exit
-  699  ls
-  700  rm ws4_1.txt
-  701  ls
-  702  rm ws4.txt
-  703  ls
-  704  rm ws3.txt
-  705  rm a1.txt
+  605  head customrs.txt
+  606  head customers.txt
+  607  rm customers.txt
+  608  awk -F " " '{print $2}' amazon_reviews_us_Books_v1_02.tsv |sort -n |uniq -c |tail -1000 >>customers.txt
+  609  ls
+  610  wc -l customers.txt
+  611  head customers.txt
+  612  for i in customers.txt
+  613  awk -F " " '{print $2}' amazon_reviews_us_Books_v1_02.tsv >> c.txt
+  614  sort c.txt |sort -n |uniq -c |tail -1000 >> ci.txt
+  615  ls
+  616  head ci.txt
+  617  rm ci.txt
+  618  rm c.txt
+  619  ls
+  620  for i in customers.txt; do 
+  621  awk " " '{print $2}' customers.txt |head
+  622  cut -f 2 customers.txt |head -10
+  623  cut -f 1 customers.tx |head -10
+  624  cut -f 1 customers.txt |head -10
+  625  cut -f 2 -d " " customers.txt |head
+  626  cut -f 3 customers.txt |head
+  627  cut -f 3 customers.txt |tail
+  628  for i in customers.txt ; do mv $i 
+  629  for i in customers.txt; do mv $i $(CUSTOMERS/$i).txt; done
+  630  for i in customers.txt; do mv $i $(basename $1 .txt)/($i).txt
+  631  for i in customers.txt; do echo $i >> CUSTOMERS/$i .txt; done
+  632  for c in customers.txt; do mv $i "${CUSTOMERS/$i/.txt}"; done
+  633  pwd
+  634  lss
+  635  ls
+  636  cs ws5/
+  637  cd ws5/
+  638  pwd
+  639  ls
+  640  awk -F " " '{print $2}' amazon_reviews_us_Books_v1_02.tsv |sort -n |uniq -c >>customers.txt
+  641  ls
+  642  tail customers.txt
+  643  for c in customers.txt; do NEWNAME="${i/%.CUSTOMERS/.txt}"; mv -- "$i" "$NEWNAME"; done
+  644  for c in customers,txt; do mv $c "${CUSTOMERS/$c.txt}"; done
+  645  for c in customers.txt; do $c > "CUSTOMERS/$c.txt"; done
+  646  for c in customers.txt; do $c > "CUSTOMERS${c}.txt"; done
+  647  for c in customers.txt; do echo $c > $c.txt; done
+  648  ls
+  649  head customers.txt.txt
+  650  cat CUSTOMERScustomers.txt.txt
+  651  more CUSTOMERScustomers.txt.txt
+  652  rm CUSTOMERScustomers.txt.txt
+  653  ls
+  654  more customers.txt.txt
+  655  rm customers.txt.txt
+  656  ls
+  657  for c in customers.txt; do echo $c >> "c.txt"; done
+  658  ls
+  659  more c.txt
+  660  git init
+  661  mkdir ws5
+  662  ls
+  663  cp amazon_reviews_us_Books_v1_02.tsv ws5
+  664  cd ws5/
+  665  pwd
+  666  ls
+  667  head amazon_reviews_us_Books_v1_02.tsv
+  668  ls
+  669  awk -F " " '{print $2}' amazon_reviews_us_Books_v1_02.tsv |sort -n |uniq -c |tail -1000 >> customers.txt
+  670  ls
+  671  head customers.txt
+  672  for c in customers.txt; do echo $c; done >> $c.txt
+  673  script ws5.txt
+  674  history
+  675  tmux new-session -s homework
+  676  ls
+  677  rm Ws1
+  678  rmdir Ws1
+  679  rm -rf Ws1
+  680  rm -rf ws_2
+  681  ls
+  682  rm -rf ws5
+  683  rm -rf ws5.txt
+  684  mkdir A3
+  685  rm -rf cmds.log
+  686  ls
+  687  cp downloaded_tweets_extend_nolf2.tsv A3
+  688  cp downloaded_tweets_extend_original_nolf2.tsv A3
+  689  cd A3/
+  690  ls
+  691  head downloaded_tweets_extend_nolf2.tsv
+  692  awk -F "\t" '{print $6}' downloaded_tweets_extend_nolf2.tsv >> in_reply_to_user_id.txt
+  693  ls
+  694  head in_reply_to_user_id.txt
+  695  awk -F "\t" '{print $1}' |uniq -c
+  696  awk -F "\t" '{print $1}' |uniq -c >> d.txt
+  697  ls
+  698  head d.txt
+  699  rm d.txt
+  700  ls
+  701  rm  in_reply_to_user_id.txt
+  702  ls
+  703  cd A3
+  704  ls
+  705  awk -F " " '{print $6, $2}' downloaded_tweets_extend_original_nolf2.tsv >> l.txt
   706  ls
-  707  exit
-  708  which tmux
-  709  mkdir ws5
-  710  pwd
-  711  cd ws5
-  712  pwd
-  713  ls
-  714  cd
+  707  head l.txt
+  708  head downloaded_tweets_extend_original_nolf2.tsv
+  709  ls
+  710  awk -F " " '{print $1}' l.txt |sort -k 1n| uniq -c |awk '{if ($1 >+3){print}}'
+  711  cd
+  712  ls
+  713  quit
+  714  exit
   715  ls
-  716  cp amazon_reviews_us_Books_v1_02.tsv ws5
-  717  cd ws5
-  718  ls
-  719  pwd
-  720  ls
-  721  cd ws5/
-  722  ls
-  723  head amazon_reviews_us_Books_v1_02.tsv
-  724  cut -f 2 -d ' ' amazon_reviews_us_Books_v1_02.tsv | sort -n | uniq -c >> customers.txt
+  716  cd A3
+  717  ls
+  718  cut -f 6  downloaded_tweets_extend_original_nolf2.tsv > 6.txt
+  719  ls
+  720  head 6.txt
+  721  tail 6.txt
+  722  tail  downloaded_tweets_extend_original_nolf2.tsv
+  723  head  downloaded_tweets_extend_original_nolf2.tsv
+  724  clear
   725  ls
-  726  head n5 customers.txt
-  727  more customers.txt |head
-  728  tail -1000 customers.txt >> c.txt
-  729  ls
-  730  head c.txt
-  731  cd
-  732  cd ws3
-  733  ls
-  734  head customers.txt
-  735  cd
-  736  cd ws5
-  737  pwd
-  738  ls
-  739  rm c.txt
-  740  rm customers.txt
+  726  head l.txt
+  727  head 
+  728  head downloaded_tweets_extend_original_nolf2.tsv
+  729  awk '[print $1}' l.txt |uniq -c |wc -c |sort -k 1n |awk '{if($1>+3){print}}'
+  730  awk '{print $1}' l.txt |uniq -c |wc -c |sort -k 1n |awk '{if($1>+3){print}}'
+  731  awk '{print $1}' l.txt |uniq -c |wc -c |sort -k 1n
+  732  head l.txt
+  733  awk '{print $1}' l.txt |uniq -c |wc -c |sort -k 1n |awk '{if($1>=3){print}}'
+  734  pwd
+  735  ls
+  736  cd A3/
+  737  ls
+  738  rm 6.txt
+  739  ls
+  740  pwd
   741  ls
-  742  awk -F " " '{print $2}' amazon_reviews_us_Books_v1_02.tsv |sort -n |uniq -c >> customers.txt
-  743  ls
-  744  head customrs.txt
-  745  head customers.txt
-  746  rm customers.txt
-  747  awk -F " " '{print $2}' amazon_reviews_us_Books_v1_02.tsv |sort -n |uniq -c |tail -1000 >>customers.txt
+  742  A3
+  743  ls A3
+  744  head l.txt
+  745  ls -latr
+  746  cd A3
+  747  pwd
   748  ls
-  749  wc -l customers.txt
-  750  head customers.txt
-  751  for i in customers.txt
-  752  awk -F " " '{print $2}' amazon_reviews_us_Books_v1_02.tsv >> c.txt
-  753  sort c.txt |sort -n |uniq -c |tail -1000 >> ci.txt
-  754  ls
-  755  head ci.txt
-  756  rm ci.txt
-  757  rm c.txt
-  758  ls
-  759  for i in customers.txt; do 
-  760  awk " " '{print $2}' customers.txt |head
-  761  cut -f 2 customers.txt |head -10
-  762  cut -f 1 customers.tx |head -10
-  763  cut -f 1 customers.txt |head -10
-  764  cut -f 2 -d " " customers.txt |head
-  765  cut -f 3 customers.txt |head
-  766  cut -f 3 customers.txt |tail
-  767  for i in customers.txt ; do mv $i 
-  768  for i in customers.txt; do mv $i $(CUSTOMERS/$i).txt; done
-  769  for i in customers.txt; do mv $i $(basename $1 .txt)/($i).txt
-  770  for i in customers.txt; do echo $i >> CUSTOMERS/$i .txt; done
-  771  for c in customers.txt; do mv $i "${CUSTOMERS/$i/.txt}"; done
-  772  pwd
-  773  lss
-  774  ls
-  775  cs ws5/
-  776  cd ws5/
-  777  pwd
-  778  ls
-  779  awk -F " " '{print $2}' amazon_reviews_us_Books_v1_02.tsv |sort -n |uniq -c >>customers.txt
-  780  ls
-  781  tail customers.txt
-  782  for c in customers.txt; do NEWNAME="${i/%.CUSTOMERS/.txt}"; mv -- "$i" "$NEWNAME"; done
-  783  for c in customers,txt; do mv $c "${CUSTOMERS/$c.txt}"; done
-  784  for c in customers.txt; do $c > "CUSTOMERS/$c.txt"; done
-  785  for c in customers.txt; do $c > "CUSTOMERS${c}.txt"; done
-  786  for c in customers.txt; do echo $c > $c.txt; done
-  787  ls
-  788  head customers.txt.txt
-  789  cat CUSTOMERScustomers.txt.txt
-  790  more CUSTOMERScustomers.txt.txt
-  791  rm CUSTOMERScustomers.txt.txt
+  749  head l.txt
+  750  awk '{print $1}' downloaded_tweets_extend_original_nolf2.tsv |sort wc -c |uniq -c > w.txt
+  751  awk '{print $1}' downloaded_tweets_extend_original_nolf2.tsv |wc -c |uniq -c > w.txt
+  752  ls
+  753  head w.txt
+  754  cat w.txt
+  755  more w.txt
+  756  head downloaded_tweets_extend_original_nolf2.tsv
+  757  awk '{print $1}' w.txt | uniq -c | sort -k 1n | awk '{ if ($1 >= 3) {print} }'
+  758  awk '{print $1}' l.txt | uniq -c | sort -k 1n | awk '{ if ($1 >= 3) {print} }'
+  759  ls
+  760  pwd
+  761  head -5 downloaded_tweets_extend_nolf2.tsv
+  762  head -5 downloaded_tweets_extend_original_nolf2.tsv
+  763  cut -f 6 -d " " |head
+  764  cut -f 6 |head
+  765  ls
+  766  cd A3
+  767  cut -f 6 -d " " downloaded_tweets_extend_original_nolf2.tsV |head
+  768  grep "replied_to" downloaded_tweets_extend_original_nolf2.tsv
+  769  clear
+  770  ls
+  771  grep "replied_to" downloaded_tweets_extend_original_nolf2.tsv >> a.txt
+  772  ls
+  773  rm l.txt
+  774  rm w.txt
+  775  ls
+  776  a.txt |head -5
+  777  head a.txt
+  778  mv a.txt replied_to.txt
+  779  ls
+  780  awk -F "\t" '{print $6,$2}' replied_to.txt |sort -n >> directional_graph.txt
+  781  ls
+  782  head directional_graph.txt
+  783  awk -F "\t" '{print $1}' directional_graph.txt |uniq -c |sort k1n |awk'{if($1>3){print}}' >> reply_cluster.txt
+  784  awk -F "\t" '{print $1}' directional_graph.txt |uniq -c |sort k1n |awk'{if($1>3){print}}'
+  785  awk -F "\t" '{print $1}' directional_graph.txt |uniq -c |sort -k1n |awk'{if($1>3){print}}'
+  786  awk -F "\t" '{print $1}' directional_graph.txt |uniq -c |sort -k1n |awk'{if($1>3)}' >> reply_cluster.txt
+  787  awk -F "\t" '{print $1}' directional_graph.txt |uniq -c |sort -k1n >>reply_cluster.txt
+  788  ls
+  789  head reply_cluster.txt
+  790  awk '{if($1>3){print}}' reply_cluster.txt
+  791  awk '{if($1>3){print}}' reply_cluster.txt > problem_2.txt
   792  ls
-  793  more customers.txt.txt
-  794  rm customers.txt.txt
-  795  ls
-  796  for c in customers.txt; do echo $c >> "c.txt"; done
-  797  ls
-  798  more c.txt
-  799  Ctrl+B followed by C
-  800  history > cmds.log
+  793  head problem_2.txt
+  794  rm problem_2.txt
+  795  awk '{if($1>=3){print}}' reply_cluster.txt >> P2.txt
+  796  ls
+  797  head P2.txt
+  798  exit
+  799  ls
+  800  cd A3/
+  801  pwd
+  802  ls
+  803  gnuplot
+  804  /etc/gnuplot-5.4.4/src/gnuplot
+  805  exit
+  806  ls
+  807  cd A3/
+  808  pwd
+  809  ls
+  810  wc -l P2.txt
+  811  wc -l directional_graph.txt
+  812  wc -l reply_cluster.txt
+  813  /etc/gnuplot-5.4.4/scr/gnuplot
+  814  /etc/gnuplot-5.4.4/src/gnuplot
+  815  ls -latr
+  816  stfp shamika@172.31.197.164
+  817  exit
+  818  display A3.svg
+  819  display A3.sv�
+  820  gls
+  821  ls
+  822  cd A3/
+  823  ls
+  824  display A3.svg
+  825  ls
+  826  cd A3/
+  827  ls
+  828  display A3.svg
+  829  ls
+  830  display a3.xterm
+  831  cd A3/
+  832  pwd
+  833  ls
+  834  cat A3.svg
+  835  clear
+  836  ls
+  837  /etc/gnuplot-5.4.4/src/gnuplot
+  838  gnuplot
+  839  /etc/gnuplot-5.4.4/src/gnuplot
+  840  ls
+  841  display a3.xterm
+  842  mkdir ws6
+  843  ls
+  844  cd amazon_reviews_us_Books_v1_02.tsv ws6
+  845  cp amazon_reviews_us_Books_v1_02.tsv ws6
+  846  cd ws6/
+  847  ls
+  848  export DATETIME=`date "ws6"`
+  849  ls
+  850  cd ws6/
+  851  ls
+  852  echo DATETIME
+  853  ECHO $DATETIME
+  854  export $DATETIME=`date`
+  855  export DATETIME=`date "+%Ym%d_%H%M%S"`
+  856  env
+  857  echo $DATETIME
+  858  pwd
+  859  ls
+  860  cd A3/
+  861  pwd
+  862  ;s
+  863  ls
+  864  head P2.txt
+  865  pwd
+  866  ls
+  867  export A3.svg
+  868  ls
+  869  cd A3/
+  870  pwd
+  871  ls
+  872  cd ws6/
+  873  ls
+  874  cd
+  875  mkdir -p /home/shamika/PRODUCTS/
+  876  awk -F "\t" '{print 42}' amazon_reviews_us_Books_v1_02.tsv |sort |uniq -c|sort -nr |head -5
+  877  head amazon_reviews_us_Books_v1_02.tsv
+  878  awk -F "\t" '{print $4}' amazon_reviews_us_Books_v1_02.tsv |sort |uniq -c|sort -nr |head -5
+  879  fgrep "0439139597" /mnt/scratch/shamika/amazon_reviews_us_Books_v1_02.tsv > /home/shamika/PRODUCTS/ 0439139597.txt
+  880  ls
+  881  rm -f A2.txt
+  882  ls
+  883  DATETIME=$(date +%Y%m%d_%H%M%S)
+  884  cp /home/shamika/PRODUCTS/0439139597.txt /home/shamika/PRODUCTS/0439139597.$DATETIME.txt
+  885   fgrep "0439139597" /mnt/scratch/shamika/amazon_reviews_us_Books_v1_02.tsv > /home/shamika/PRODUCTS/0439139597.txt
+  886  cd
+  887  ls
+  888  rm PRODUCTS
+  889  rm -f PRODUCTS
+  890  rm -rf PRODUCTS
+  891  ls
+  892  cd ws6/
+  893  ls
+  894  mkdir -p PRODUCTS/
+  895  fgrep -h "0439139597" amazon_reviews_us_Books_v1_02.tsv >> PRODUCTS/0439139597.txt
+  896  ls
+  897  DATETIME=$(date +%Y%m%d_%H%M%S)
+  898  cp PRODUCTS/0439139597.txt PRODUCTS/0439139597.$DATETIME.txt
+  899  ls
+  900  cd PRODUCTS
+  901  ls
+  902  rm -f PRODUCTS/0439139597.LATEST.txt
+  903  ln -s /home/shamika/ws6/PRODUCTS/0439139597.$DATETIME.txt /home/shamika/ws6/PRODUCTS/0439139597.LATEST.txt
+  904  cat PRODUCTS/0439139597.LATEST.txt
+  905  ls
+  906  cat  0439139597.LATEST.txt
+  907  exit
+  908  ls
+  909  cd ws6/
+  910  cd PRODUCTS/
+  911  ls
+  912  rm 0439139597.LATEST.txt
+  913  ls
+  914  head 0439139597.20221019_021514.txt
+  915  head amazon_reviews_us_Books_v1_02.tsv
+  916  ls
+  917  cd ws6/
+  918  cd PEODUCTS
+  919  cd PRODUCTS/
+  920  ls
+  921  hsitory -10
+  922  history -10
+  923  ls 
+  924  cd ws6/
+  925  ls
+  926  head amazon_reviews_us_Books_v1_02.tsv
+  927  cd PRODUCTS/
+  928  ls
+  929  cat new_product_review >> 0439139597.20221019_021514.txt
+  930  cat >> 0439139597.20221019_021514.txt
+  931  ln -s /home/shamika/ws6/PRODUCTS/0439139597.$DATETIME.txt /home/shamika/ws6/PRODUCTS/0439139597.LATEST.txt
+  932  ls
+  933  awk -F "\t" '{print $8}' PRODUCTS/0439139597.LATEST.txt | awk '{total+=1,count++} END {print total/count}' >PRODUCTS/0439139597.AVGRATING.txt
+  934  awk -F "\t" '{print $8}' PRODUCTS/0439139597.LATEST.txt | awk '{total+=1,count++} END {print total/count}' > 0439139597.AVGRATING.txt
+  935   awk -F "\t" '{print $8}' PRODUCTS/0439139597.LATEST.txt | awk '{total+=1;count++} END {print total/count}' > 0439139597.AVGRATING.txt
+  936  awk -F "\t" '{print $8} PRODUCTS/0439139597.LATEST.txt > rating.txt
+  937  awk -F "\t" '{print $8} PRODUCTS/0439139597.LATEST.txt >> rating.txt
+  938  awk -F "\t" '{print $8}' PRODUCTS/0439139597.LATEST.txt >> rating.txt
+  939  head 0439139597.LATEST.txt
+  940  cat 0439139597.LATEST.txt
+  941  ls
+  942  head 0439139597.AVGRATING.txt
+  943  head 0439139597.20221019_021514.txt
+  944  cut -f 8 -d " " 0439139597.20221019_021514.txt > rating.txt
+  945  ls
+  946  head rating.txt
+  947  rm rating.txt
+  948  ls
+  949  cut -f 9 -d " " 0439139597.20221019_021514.txt > rating.txt
+  950  ls
+  951  head rating.txt
+  952  cut -f 9 -d ' ' 0439139597.20221019_021514.txt >> r.txt
+  953  ls
+  954  head r.txt
+  955  cut -f 8 0439139597.20221019_021514.txt >> r.txt
+  956  cut -f 8 0439139597.20221019_021514.txt >> s.txt
+  957  ls
+  958  rm rating.txt
+  959  rm r.txt
+  960  head s.txt
+  961  cut -f 8 PRODUCTS/0439139597.LATEST.txt |awk '{total += $1; count++} END {print total/count}' >> PRODUCTS/0431.AVGRATIGN.txt
+  962  cut -f 8 PRODUCTS/0439139597.LATEST.txt |awk '{total += $1; count++} END {print total/count}'
+  963  ut -cat PRODUCTS/0439139597.LATEST.txt
+  964  cat PRODUCTS/0439139597.LATEST.txt
+  965  cat0439139597.LATEST.txt
+  966  cat 0439139597.LATEST.txt
+  967  cut -f 8 PRODUCTS/0439139597.20221019_021514.txt |awk '{total += $1; count++} END {print total/count}' >> avg.txt
+  968  cut -f 8 PRODUCTS/0439139597.20221019_021514.txt >> a.txt
+  969  head s.txt
+  970  awk -F "\t" 'BEGIN{sum=0; count=0}{sum=sum+$8; count=count+1}END{print sum/count}' 0439139597.20221019_021514.txt
+  971  awk -F "\t" 'BEGIN{sum=0; count=0}{sum=sum+$8; count=count+1}END{print sum/count}' 0439139597.LATEST.txt >> 0439139597.AVGRATING.txt
+  972  crontab -e
+  973  ls
+  974  history
+  975  exit
+  976  git init
+  977  mkdir ws6
+  978  cp amazon_reviews_us_Books_v1_02.tsv ws6
+  979  cd ws6/
+  980  ls
+  981  rm -rf cron.log
+  982  ls
+  983  vi worksheet6.sh
+  984  ls
+  985  crontab-l
+  986  crontab -l
+  987  cd PRODUCTS
+  988  mkdir PRODUCTS
+  989  fgrep "0439139597" amazon_reviews_us_Books_v1_02.tsv > PRODUCTS/0439139597.txt
+  990  cd PRODUCTS/
+  991  ls
+  992  cp /home/shamika/ws6/PRODUCTS/0439139597.txt /home/shamika/ws6/PRODUCTS/0439139597.$DATETIME.TXT
+  993  mv /home/shamika/ws6/PRODUCTS/0439139597.$DATETIME.TXT /home/shamika/ws6/PRODUCTS/0439139597.$DATETIME.txt
+  994  ls
+  995  echo $DATETIME
+  996  vi worksheet6.sh
+  997  ls
+  998  history
+  999  exit
+ 1000  mkdir ws6
+ 1001  cp amazon_reviews_us_Books_v1_02.tsv ws6
+ 1002  cd ws6
+ 1003  mkdir PRODUCTS
+ 1004  fgrep "04391139597" amazon_reviews_us_Books_v1_02.tsv > PRODUCTS/04391139597.txt
+ 1005  DATETIME=$(date +%Y%m%d_%H%M%S)
+ 1006  cd PRODUCTS
+ 1007  ls
+ 1008  cp /home/shamika/ws6/PRODUCTS/04391139597.txt /home/shamika/ws6/PRODUCTS/04391139597.$DATETIME.txt
+ 1009  ls
+ 1010  ln -s /home/shamika/ws6/PRODUCTS/04391139597.$DATETIME.txt home/shamika/ws6/PRODUCTS/04391139597.LATEST.txt
+ 1011  cd
+ 1012  cd ws6
+ 1013  ln -s /home/shamika/ws6/PRODUCTS/04391139597.$DATETIME.txt home/shamika/ws6/PRODUCTS/04391139597.LATEST.txt
+ 1014  vi worsksheet6.sh
+ 1015  ls
+ 1016  cat cron.log
+ 1017  crontab -e
+ 1018  history > cmds.log
