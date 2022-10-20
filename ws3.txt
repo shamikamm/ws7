@@ -1,80 +1,0 @@
-ANSWERS:
- 1) Which customers are the top 3 reviewers (with the most reviews)?
-    Customer 50122160 had 21922 reviews
-    Customer 50732546 had 9964 reviews
-    Customer 52615377 had 2664 reviews
-
-2) What are the top 3 most reviewed products?
-    Product 043935806X had 4625 reviews
-    Product 0439139597 had 3739 reviews
-    Product 0525947647 had 2666 reviews
-
-
-
-
-
-
-
-
-Script started on 2022-09-15 23:29:39-04:00
-]0;shamika@sjsu:~[shamika@sjsu ~]$ mkdir ws3
-]0;shamika@sjsu:~[shamika@sjsu ~]$ cd ws3/
-]0;shamika@sjsu:~/ws3[shamika@sjsu ws3]$ pwd
-/home/shamika/ws3
-]0;shamika@sjsu:~/ws3[shamika@sjsu ws3]$ git init
-[33mhint: Using 'master' as the name for the initial branch. This default branch name[m
-[33mhint: is subject to change. To configure the initial branch name to use in all[m
-[33mhint: of your new repositories, which will suppress this warning, call:[m
-[33mhint: [m
-[33mhint: 	git config --global init.defaultBranch <name>[m
-[33mhint: [m
-[33mhint: Names commonly chosen instead of 'master' are 'main', 'trunk' and[m
-[33mhint: 'development'. The just-created branch can be renamed via this command:[m
-[33mhint: [m
-[33mhint: 	git branch -m <name>[m
-Initialized empty Git repository in /home/shamika/ws3/.git/
-]0;shamika@sjsu:~/ws3[shamika@sjsu ws3]$ wgethttps://s3.amazonaws.com/amazon-reviews-pds/tsv/amazon_reeviews_us_Books_v1_02.tsv.gz
-bash: wgethttps://s3.amazonaws.com/amazon-reviews-pds/tsv/amazon_reviews_us_Books_v1_02.tsv.gz: No such file or directory
-]0;shamika@sjsu:~/ws3[shamika@sjsu ws3]$ wget https://s3.amazonaws.com/amazon-reviews-pds/tsv/amazon_rreviews_us_Books_v1_02.tsv.gz
---2022-09-15 23:30:22--  https://s3.amazonaws.com/amazon-reviews-pds/tsv/amazon_reviews_us_Books_v1_02.tsv.gz
-Resolving s3.amazonaws.com (s3.amazonaws.com)... 54.231.163.104
-Connecting to s3.amazonaws.com (s3.amazonaws.com)|54.231.163.104|:443... connected.
-HTTP request sent, awaiting response... 200 OK
-Length: 1329539135 (1.2G) [application/x-gzip]
-Saving to: ‘amazon_reviews_us_Books_v1_02.tsv.gz’
-
-          amazon_re   0%[                    ]       0  --.-KB/s                        amazon_rev   1%[                    ]  16.89M  84.4MB/s                       amazon_revi   3%[                    ]  39.00M  97.5MB/s                      amazon_revie   4%[                    ]  60.38M   101MB/s                     amazon_review   6%[>                   ]  76.49M  95.6MB/s                    amazon_reviews   7%[>                   ]  93.59M  93.5MB/s                   amazon_reviews_   9%[>                   ] 115.76M  96.4MB/s                  amazon_reviews_u  10%[=>                  ] 137.93M  98.5MB/s                 amazon_reviews_us  12%[=>                  ] 157.28M  98.3MB/s                amazon_reviews_us_  13%[=>                  ] 171.92M  95.5MB/s               amazon_reviews_us_B  14%[=>                  ] 181.19M  88.7MB/s               mazon_reviews_us_Bo  14%[=>                  ] 189.31M  84.4MB/s               azon_reviews_us_Boo  16%[==>                 ] 207.68M  85.0MB/s               zon_reviews_us_Book  17%[==>                 ] 224.00M  83.2MB/s               on_reviews_us_Books  18%[==>                 ] 233.69M  80.8MB/s               n_reviews_us_Books_  20%[===>                ] 255.89M  82.8MB/s    eta 12s    _reviews_us_Books_v  21%[===>                ] 278.06M  84.5MB/s    eta 12s    reviews_us_Books_v1  23%[===>                ] 298.06M  84.7MB/s    eta 12s    eviews_us_Books_v1_  25%[====>               ] 320.24M  85.1MB/s    eta 12s    views_us_Books_v1_0  26%[====>               ] 337.79M  84.3MB/s    eta 12s    iews_us_Books_v1_02  28%[====>               ] 360.02M  86.8MB/s    eta 10s    ews_us_Books_v1_02.  30%[=====>              ] 382.18M  87.2MB/s    eta 10s    ws_us_Books_v1_02.t  31%[=====>              ] 404.37M  87.6MB/s    eta 10s    s_us_Books_v1_02.ts  33%[=====>              ] 426.54M  87.7MB/s    eta 10s    _us_Books_v1_02.tsv  34%[=====>              ] 434.86M  85.1MB/s    eta 10s    us_Books_v1_02.tsv.  36%[======>             ] 457.03M  87.9MB/s    eta 9s     s_Books_v1_02.tsv.g  37%[======>             ] 476.54M  90.9MB/s    eta 9s     _Books_v1_02.tsv.gz  38%[======>             ] 494.02M  93.9MB/s    eta 9s     Books_v1_02.tsv.gz   40%[=======>            ] 512.20M  94.1MB/s    eta 9s     ooks_v1_02.tsv.gz    42%[=======>            ] 534.35M  97.0MB/s    eta 9s     oks_v1_02.tsv.gz     43%[=======>            ] 556.53M   101MB/s    eta 8s     ks_v1_02.tsv.gz      45%[========>           ] 576.00M  98.1MB/s    eta 8s     s_v1_02.tsv.gz       47%[========>           ] 596.81M  97.9MB/s    eta 8s     _v1_02.tsv.gz        48%[========>           ] 618.70M  98.6MB/s    eta 8s     v1_02.tsv.gz         50%[=========>          ] 640.86M  98.8MB/s    eta 8s     1_02.tsv.gz          52%[=========>          ] 663.06M  99.9MB/s    eta 7s     _02.tsv.gz           54%[=========>          ] 685.27M   100MB/s    eta 7s     02.tsv.gz            55%[==========>         ] 705.12M  99.5MB/s    eta 7s     2.tsv.gz             57%[==========>         ] 723.91M  98.1MB/s    eta 7s     .tsv.gz              58%[==========>         ] 738.50M  96.0MB/s    eta 7s     tsv.gz               59%[==========>         ] 751.94M  97.4MB/s    eta 6s     sv.gz                60%[===========>        ] 766.23M  95.3MB/s    eta 6s     v.gz                 62%[===========>        ] 787.89M  96.7MB/s    eta 6s     .gz                  63%[===========>        ] 799.99M  94.7MB/s    eta 6s     gz                   64%[===========>        ] 822.16M  94.9MB/s    eta 6s     z                    66%[============>       ] 839.42M  92.9MB/s    eta 5s                          67%[============>       ] 850.67M  89.7MB/s    eta 5s                       a  68%[============>       ] 872.84M  92.5MB/s    eta 5s                      am  70%[=============>      ] 895.03M  93.2MB/s    eta 5s                     ama  72%[=============>      ] 917.25M  92.7MB/s    eta 5s                    amaz  74%[=============>      ] 939.43M  93.0MB/s    eta 4s                   amazo  75%[==============>     ] 961.65M  93.3MB/s    eta 4s                  amazon  77%[==============>     ] 983.84M  93.5MB/s    eta 4s                 amazon_  79%[==============>     ]   1006M  93.7MB/s    eta 4s                amazon_r  81%[===============>    ]   1.00G  95.0MB/s    eta 4s               amazon_re  82%[===============>    ]   1.02G  95.0MB/s    eta 2s              amazon_rev  84%[===============>    ]   1.04G  96.6MB/s    eta 2s             amazon_revi  85%[================>   ]   1.06G  96.4MB/s    eta 2s            amazon_revie  87%[================>   ]   1.08G  97.8MB/s    eta 2s           amazon_review  89%[================>   ]   1.10G  99.7MB/s    eta 2s          amazon_reviews  91%[=================>  ]   1.13G   101MB/s    eta 1s         amazon_reviews_  92%[=================>  ]   1.15G   105MB/s    eta 1s        amazon_reviews_u  94%[=================>  ]   1.17G   104MB/s    eta 1s       amazon_reviews_us  96%[==================> ]   1.19G   104MB/s    eta 1s      amazon_reviews_us_  97%[==================> ]   1.21G   104MB/s    eta 1s     amazon_reviews_us_B  99%[==================> ]   1.23G   104MB/s    eta 0s     amazon_reviews_us_B 100%[===================>]   1.24G   104MB/s    in 13s     
-
-2022-09-15 23:30:36 (95.3 MB/s) - ‘amazon_reviews_us_Books_v1_02.tsv.gz’ saved [1329539135/1329539135]
-
-]0;shamika@sjsu:~/ws3[shamika@sjsu ws3]$ [K[shamika@sjsu ws3]$ [K[shamika@sjsu ws3]$ [K[shamika@sjsu ws3]$ [K[shamika@sjsu ws3]$ [K[shamika@sjsu ws3]$ [K[shamika@sjsu ws3]$ [K[shamika@sjsu ws3]$ [K[shamika@sjsu ws3]$ [K[shamika@sjsu ws3]$ [K[shamika@sjsu ws3]$ [K[shamika@sjsu ws3]$ [K[shamika@sjsu ws3]$ [K[shamika@sjsu ws3]$ [K[shamika@sjsu ws3]$ [K[shamika@sjsu ws3]$ [K[shamika@sjsu ws3]$ [K[shamika@sjsu ws3]$ [K[shamika@sjsu ws3]$ [K[shamika@sjsu ws3]$ [K[shamika@sjsu ws3]$ [K[shamika@sjsu ws3]$ [K[shamika@sjsu ws3]$ [K[shamika@sjsu ws3]$ [K[shamika@sjsu ws3]$ [K[shamika@sjsu ws3]$ [K[shamika@sjsu ws3]$ [K[shamika@sjsu ws3]$ [K[shamika@sjsu ws3]$ awk -F " " '{print $2}' amazon_reviews_us_Books_v1_02.tsv > customers.txt
-awk: fatal: cannot open file `amazon_reviews_us_Books_v1_02.tsv' for reading (No such file or directory)
-]0;shamika@sjsu:~/ws3[shamika@sjsu ws3]$ awk -F " " '{print $2}'[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kgunzip amazon_reviews_us_Books_v1_02.tsv.gz
-]0;shamika@sjsu:~/ws3[shamika@sjsu ws3]$ awk -F " " '{print $2}' amazon_reviews_us_Books_v1_02.tsv > customers.txt
-]0;shamika@sjsu:~/ws3[shamika@sjsu ws3]$ sort customers.txt | uniq -c | sort -n | tain[Kl -10 
-   1384 49693975
-   1416 39569598
-   1622 45273033
-   1643 20595117
-   1786 50913245
-   1797 50776149
-   2215 45041039
-   2664 52615377
-   9964 50732546
-  21922 50122160
-]0;shamika@sjsu:~/ws3[shamika@sjsu ws3]$ awk -F " " '{print $2}[K[K4}' amazon_reviews_us_Books_v1_02.tsv > prio[K[Kodun[Kcts.txt
-]0;shamika@sjsu:~/ws3[shamika@sjsu ws3]$ sort products.txt | uniq -c | sort -n | tail -10
-   1772 0312864590
-   1795 1400050308
-   2024 0316666343
-   2052 0439784549
-   2366 0590353403
-   2584 0385504209
-   2615 0895260174
-   2666 0525947647
-   3739 0439139597
-   4625 043935806X
-]0;shamika@sjsu:~/ws3[shamika@sjsu ws3]$ history > cmds.log
-]0;shamika@sjsu:~/ws3[shamika@sjsu ws3]$ exit
-
-Script done on 2022-09-15 23:37:49-04:00
